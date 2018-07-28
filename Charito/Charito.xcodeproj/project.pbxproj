@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2874DE70210BFC7200CD8D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874DE6F210BFC7200CD8D25 /* AppDelegate.swift */; };
+		2874DE72210BFC7200CD8D25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874DE71210BFC7200CD8D25 /* ViewController.swift */; };
+		2874DE75210BFC7200CD8D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2874DE73210BFC7200CD8D25 /* Main.storyboard */; };
+		2874DE77210BFC7200CD8D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2874DE76210BFC7200CD8D25 /* Assets.xcassets */; };
+		2874DE7A210BFC7200CD8D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2874DE78210BFC7200CD8D25 /* LaunchScreen.storyboard */; };
+		2874DE85210BFC7200CD8D25 /* CharitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874DE84210BFC7200CD8D25 /* CharitoTests.swift */; };
+		2874DE90210BFC7200CD8D25 /* CharitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874DE8F210BFC7200CD8D25 /* CharitoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2874DE81210BFC7200CD8D25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2874DE64210BFC7200CD8D25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2874DE6B210BFC7200CD8D25;
+			remoteInfo = Charito;
+		};
+		2874DE8C210BFC7200CD8D25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2874DE64210BFC7200CD8D25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2874DE6B210BFC7200CD8D25;
+			remoteInfo = Charito;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2874DE6C210BFC7200CD8D25 /* Charito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Charito.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2874DE6F210BFC7200CD8D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2874DE71210BFC7200CD8D25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2874DE74210BFC7200CD8D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2874DE76210BFC7200CD8D25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2874DE79210BFC7200CD8D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2874DE7B210BFC7200CD8D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2874DE80210BFC7200CD8D25 /* CharitoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharitoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2874DE84210BFC7200CD8D25 /* CharitoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitoTests.swift; sourceTree = "<group>"; };
+		2874DE86210BFC7200CD8D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2874DE8B210BFC7200CD8D25 /* CharitoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharitoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2874DE8F210BFC7200CD8D25 /* CharitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitoUITests.swift; sourceTree = "<group>"; };
+		2874DE91210BFC7200CD8D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2874DE69210BFC7200CD8D25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2874DE7D210BFC7200CD8D25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2874DE88210BFC7200CD8D25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2874DE63210BFC7200CD8D25 = {
+			isa = PBXGroup;
+			children = (
+				2874DE6E210BFC7200CD8D25 /* Charito */,
+				2874DE83210BFC7200CD8D25 /* CharitoTests */,
+				2874DE8E210BFC7200CD8D25 /* CharitoUITests */,
+				2874DE6D210BFC7200CD8D25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2874DE6D210BFC7200CD8D25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2874DE6C210BFC7200CD8D25 /* Charito.app */,
+				2874DE80210BFC7200CD8D25 /* CharitoTests.xctest */,
+				2874DE8B210BFC7200CD8D25 /* CharitoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2874DE6E210BFC7200CD8D25 /* Charito */ = {
+			isa = PBXGroup;
+			children = (
+				2874DE6F210BFC7200CD8D25 /* AppDelegate.swift */,
+				2874DE71210BFC7200CD8D25 /* ViewController.swift */,
+				2874DE73210BFC7200CD8D25 /* Main.storyboard */,
+				2874DE76210BFC7200CD8D25 /* Assets.xcassets */,
+				2874DE78210BFC7200CD8D25 /* LaunchScreen.storyboard */,
+				2874DE7B210BFC7200CD8D25 /* Info.plist */,
+			);
+			path = Charito;
+			sourceTree = "<group>";
+		};
+		2874DE83210BFC7200CD8D25 /* CharitoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2874DE84210BFC7200CD8D25 /* CharitoTests.swift */,
+				2874DE86210BFC7200CD8D25 /* Info.plist */,
+			);
+			path = CharitoTests;
+			sourceTree = "<group>";
+		};
+		2874DE8E210BFC7200CD8D25 /* CharitoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2874DE8F210BFC7200CD8D25 /* CharitoUITests.swift */,
+				2874DE91210BFC7200CD8D25 /* Info.plist */,
+			);
+			path = CharitoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2874DE6B210BFC7200CD8D25 /* Charito */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2874DE94210BFC7200CD8D25 /* Build configuration list for PBXNativeTarget "Charito" */;
+			buildPhases = (
+				2874DE68210BFC7200CD8D25 /* Sources */,
+				2874DE69210BFC7200CD8D25 /* Frameworks */,
+				2874DE6A210BFC7200CD8D25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Charito;
+			productName = Charito;
+			productReference = 2874DE6C210BFC7200CD8D25 /* Charito.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2874DE7F210BFC7200CD8D25 /* CharitoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2874DE97210BFC7200CD8D25 /* Build configuration list for PBXNativeTarget "CharitoTests" */;
+			buildPhases = (
+				2874DE7C210BFC7200CD8D25 /* Sources */,
+				2874DE7D210BFC7200CD8D25 /* Frameworks */,
+				2874DE7E210BFC7200CD8D25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2874DE82210BFC7200CD8D25 /* PBXTargetDependency */,
+			);
+			name = CharitoTests;
+			productName = CharitoTests;
+			productReference = 2874DE80210BFC7200CD8D25 /* CharitoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2874DE8A210BFC7200CD8D25 /* CharitoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2874DE9A210BFC7200CD8D25 /* Build configuration list for PBXNativeTarget "CharitoUITests" */;
+			buildPhases = (
+				2874DE87210BFC7200CD8D25 /* Sources */,
+				2874DE88210BFC7200CD8D25 /* Frameworks */,
+				2874DE89210BFC7200CD8D25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2874DE8D210BFC7200CD8D25 /* PBXTargetDependency */,
+			);
+			name = CharitoUITests;
+			productName = CharitoUITests;
+			productReference = 2874DE8B210BFC7200CD8D25 /* CharitoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2874DE64210BFC7200CD8D25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Auzia;
+				TargetAttributes = {
+					2874DE6B210BFC7200CD8D25 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2874DE7F210BFC7200CD8D25 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2874DE6B210BFC7200CD8D25;
+					};
+					2874DE8A210BFC7200CD8D25 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2874DE6B210BFC7200CD8D25;
+					};
+				};
+			};
+			buildConfigurationList = 2874DE67210BFC7200CD8D25 /* Build configuration list for PBXProject "Charito" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2874DE63210BFC7200CD8D25;
+			productRefGroup = 2874DE6D210BFC7200CD8D25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2874DE6B210BFC7200CD8D25 /* Charito */,
+				2874DE7F210BFC7200CD8D25 /* CharitoTests */,
+				2874DE8A210BFC7200CD8D25 /* CharitoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2874DE6A210BFC7200CD8D25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2874DE7A210BFC7200CD8D25 /* LaunchScreen.storyboard in Resources */,
+				2874DE77210BFC7200CD8D25 /* Assets.xcassets in Resources */,
+				2874DE75210BFC7200CD8D25 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2874DE7E210BFC7200CD8D25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2874DE89210BFC7200CD8D25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2874DE68210BFC7200CD8D25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2874DE72210BFC7200CD8D25 /* ViewController.swift in Sources */,
+				2874DE70210BFC7200CD8D25 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2874DE7C210BFC7200CD8D25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2874DE85210BFC7200CD8D25 /* CharitoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2874DE87210BFC7200CD8D25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2874DE90210BFC7200CD8D25 /* CharitoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2874DE82210BFC7200CD8D25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2874DE6B210BFC7200CD8D25 /* Charito */;
+			targetProxy = 2874DE81210BFC7200CD8D25 /* PBXContainerItemProxy */;
+		};
+		2874DE8D210BFC7200CD8D25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2874DE6B210BFC7200CD8D25 /* Charito */;
+			targetProxy = 2874DE8C210BFC7200CD8D25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2874DE73210BFC7200CD8D25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2874DE74210BFC7200CD8D25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2874DE78210BFC7200CD8D25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2874DE79210BFC7200CD8D25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2874DE92210BFC7200CD8D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2874DE93210BFC7200CD8D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2874DE95210BFC7200CD8D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5K6KBE5JZ;
+				INFOPLIST_FILE = Charito/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Auzia.Charito;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2874DE96210BFC7200CD8D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5K6KBE5JZ;
+				INFOPLIST_FILE = Charito/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Auzia.Charito;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2874DE98210BFC7200CD8D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5K6KBE5JZ;
+				INFOPLIST_FILE = CharitoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Auzia.CharitoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Charito.app/Charito";
+			};
+			name = Debug;
+		};
+		2874DE99210BFC7200CD8D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5K6KBE5JZ;
+				INFOPLIST_FILE = CharitoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Auzia.CharitoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Charito.app/Charito";
+			};
+			name = Release;
+		};
+		2874DE9B210BFC7200CD8D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5K6KBE5JZ;
+				INFOPLIST_FILE = CharitoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Auzia.CharitoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Charito;
+			};
+			name = Debug;
+		};
+		2874DE9C210BFC7200CD8D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5K6KBE5JZ;
+				INFOPLIST_FILE = CharitoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Auzia.CharitoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Charito;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2874DE67210BFC7200CD8D25 /* Build configuration list for PBXProject "Charito" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2874DE92210BFC7200CD8D25 /* Debug */,
+				2874DE93210BFC7200CD8D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2874DE94210BFC7200CD8D25 /* Build configuration list for PBXNativeTarget "Charito" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2874DE95210BFC7200CD8D25 /* Debug */,
+				2874DE96210BFC7200CD8D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2874DE97210BFC7200CD8D25 /* Build configuration list for PBXNativeTarget "CharitoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2874DE98210BFC7200CD8D25 /* Debug */,
+				2874DE99210BFC7200CD8D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2874DE9A210BFC7200CD8D25 /* Build configuration list for PBXNativeTarget "CharitoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2874DE9B210BFC7200CD8D25 /* Debug */,
+				2874DE9C210BFC7200CD8D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2874DE64210BFC7200CD8D25 /* Project object */;
+}
