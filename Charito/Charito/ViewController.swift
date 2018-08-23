@@ -14,21 +14,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var seventhEigth: UIButton!
     @IBOutlet weak var ninthTenth: UIButton!
     @IBOutlet weak var eleventhTwelfth: UIButton!
+    let darkGreen = UIColor(red:0.16, green:0.50, blue:0.38, alpha:1.0)
     override func viewDidLoad() {
         super.viewDidLoad()
-        fifthSixth.backgroundColor = .gray
+        fifthSixth.backgroundColor = darkGreen
         fifthSixth.layer.cornerRadius = 10
         fifthSixth.layer.borderWidth = 2
         
-        seventhEigth.backgroundColor = .gray
+        seventhEigth.backgroundColor = darkGreen
         seventhEigth.layer.cornerRadius = 10
         seventhEigth.layer.borderWidth = 2
         
-        ninthTenth.backgroundColor = .gray
+        ninthTenth.backgroundColor = darkGreen
         ninthTenth.layer.cornerRadius = 10
         ninthTenth.layer.borderWidth = 2
         
-        eleventhTwelfth.backgroundColor = .gray
+        eleventhTwelfth.backgroundColor = darkGreen
         eleventhTwelfth.layer.cornerRadius = 10
         eleventhTwelfth.layer.borderWidth = 2
         

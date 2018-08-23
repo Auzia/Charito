@@ -46,9 +46,6 @@
                                 <state key="normal" title="  5th/6th grade  ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="fifthSixth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="byW-tR-fJD"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7q1-7i-EPA">
                                 <rect key="frame" x="206" y="413" width="134" height="33"/>
@@ -56,9 +53,6 @@
                                 <state key="normal" title="  7th/8th grade  ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="seventhEigth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p45-ba-NZC"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTL-VD-dOb">
                                 <rect key="frame" x="206" y="525" width="135" height="33"/>
@@ -66,9 +60,6 @@
                                 <state key="normal" title="  11th/12th grade  ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="eleventhTwelfth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YTY-w4-5kq"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYb-dg-gCL">
                                 <rect key="frame" x="16" y="525" width="137" height="33"/>
@@ -76,9 +67,6 @@
                                 <state key="normal" title="  9th/10th grade  ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="ninthTenth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRl-Yn-FvP"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVX-CI-DwL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
@@ -117,15 +105,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HTL-VD-dOb" secondAttribute="bottom" constant="109" id="JYV-J0-qTS"/>
                             <constraint firstItem="Xst-es-vSE" firstAttribute="bottom" secondItem="bsc-Ap-zfv" secondAttribute="bottom" id="Jll-gN-oPa"/>
                             <constraint firstItem="XHF-R3-5Dh" firstAttribute="top" secondItem="hVX-CI-DwL" secondAttribute="bottom" constant="8" id="LQR-TU-g44"/>
-                            <constraint firstItem="HTL-VD-dOb" firstAttribute="trailing" secondItem="7q1-7i-EPA" secondAttribute="trailing" id="LcO-Hs-8iB"/>
+                            <constraint firstItem="HTL-VD-dOb" firstAttribute="trailing" secondItem="7q1-7i-EPA" secondAttribute="trailing" constant="1" id="LcO-Hs-8iB"/>
                             <constraint firstItem="mIE-dR-deL" firstAttribute="top" secondItem="bsc-Ap-zfv" secondAttribute="bottom" constant="44" id="RnI-5A-WGL"/>
                             <constraint firstItem="Xst-es-vSE" firstAttribute="centerX" secondItem="IVG-zh-tjW" secondAttribute="centerX" id="Who-a8-XXt"/>
                             <constraint firstItem="hVX-CI-DwL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Y8H-qJ-HEY"/>
                             <constraint firstAttribute="bottom" secondItem="IVG-zh-tjW" secondAttribute="bottom" constant="221" id="lSQ-YQ-IZO"/>
                             <constraint firstItem="Xst-es-vSE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pQ5-me-zQQ"/>
                             <constraint firstItem="bsc-Ap-zfv" firstAttribute="leading" secondItem="Xst-es-vSE" secondAttribute="trailing" constant="11" id="sBW-Pm-qHT"/>
-                            <constraint firstItem="7q1-7i-EPA" firstAttribute="leading" secondItem="IVG-zh-tjW" secondAttribute="trailing" constant="78" id="tWl-c4-85X"/>
-                            <constraint firstItem="IVG-zh-tjW" firstAttribute="centerX" secondItem="NYb-dg-gCL" secondAttribute="centerX" id="v1D-Hg-7FE"/>
+                            <constraint firstItem="7q1-7i-EPA" firstAttribute="leading" secondItem="IVG-zh-tjW" secondAttribute="trailing" constant="48" id="tWl-c4-85X"/>
+                            <constraint firstItem="IVG-zh-tjW" firstAttribute="centerX" secondItem="NYb-dg-gCL" secondAttribute="centerX" constant="7.5" id="v1D-Hg-7FE"/>
                             <constraint firstItem="U1C-1h-c9p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v9C-d8-lNm"/>
                             <constraint firstItem="hVX-CI-DwL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wSb-aL-fyg"/>
                             <constraint firstItem="U1C-1h-c9p" firstAttribute="top" secondItem="XHF-R3-5Dh" secondAttribute="bottom" id="xra-ch-y7I"/>
