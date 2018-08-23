@@ -9,10 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var fifthSixth: UIButton!
+    @IBOutlet weak var seventhEigth: UIButton!
+    @IBOutlet weak var ninthTenth: UIButton!
+    @IBOutlet weak var eleventhTwelfth: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        fifthSixth.backgroundColor = .green
+        fifthSixth.layer.cornerRadius = 10
+        fifthSixth.layer.borderWidth = 2
+        
+        seventhEigth.backgroundColor = .green
+        seventhEigth.layer.cornerRadius = 10
+        seventhEigth.layer.borderWidth = 2
+        
+        ninthTenth.backgroundColor = .green
+        ninthTenth.layer.cornerRadius = 10
+        ninthTenth.layer.borderWidth = 2
+        
+        eleventhTwelfth.backgroundColor = .green
+        eleventhTwelfth.layer.cornerRadius = 10
+        eleventhTwelfth.layer.borderWidth = 2
+        
     }
 
     override func didReceiveMemoryWarning() {
