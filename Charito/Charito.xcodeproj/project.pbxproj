@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28028289212F7EE600D588D0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28028288212F7EE600D588D0 /* Game.swift */; };
+		28167AAC212E366100EE65FE /* QuestionPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28167AAB212E366100EE65FE /* QuestionPool.swift */; };
+		28167AAE212E39A500EE65FE /* QuestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28167AAD212E39A500EE65FE /* QuestionList.swift */; };
+		28167AB0212E3B3C00EE65FE /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28167AAF212E3B3C00EE65FE /* Topic.swift */; };
 		2874DE70210BFC7200CD8D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874DE6F210BFC7200CD8D25 /* AppDelegate.swift */; };
 		2874DE72210BFC7200CD8D25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874DE71210BFC7200CD8D25 /* ViewController.swift */; };
 		2874DE75210BFC7200CD8D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2874DE73210BFC7200CD8D25 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28028288212F7EE600D588D0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		28167AAB212E366100EE65FE /* QuestionPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPool.swift; sourceTree = "<group>"; };
+		28167AAD212E39A500EE65FE /* QuestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionList.swift; sourceTree = "<group>"; };
+		28167AAF212E3B3C00EE65FE /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		2874DE6C210BFC7200CD8D25 /* Charito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Charito.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2874DE6F210BFC7200CD8D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2874DE71210BFC7200CD8D25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +111,10 @@
 				2874DE76210BFC7200CD8D25 /* Assets.xcassets */,
 				2874DE78210BFC7200CD8D25 /* LaunchScreen.storyboard */,
 				2874DE7B210BFC7200CD8D25 /* Info.plist */,
+				28167AAB212E366100EE65FE /* QuestionPool.swift */,
+				28167AAD212E39A500EE65FE /* QuestionList.swift */,
+				28167AAF212E3B3C00EE65FE /* Topic.swift */,
+				28028288212F7EE600D588D0 /* Game.swift */,
 			);
 			path = Charito;
 			sourceTree = "<group>";
@@ -259,7 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28167AB0212E3B3C00EE65FE /* Topic.swift in Sources */,
+				28028289212F7EE600D588D0 /* Game.swift in Sources */,
 				2874DE72210BFC7200CD8D25 /* ViewController.swift in Sources */,
+				28167AAE212E39A500EE65FE /* QuestionList.swift in Sources */,
+				28167AAC212E366100EE65FE /* QuestionPool.swift in Sources */,
 				2874DE70210BFC7200CD8D25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
