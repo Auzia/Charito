@@ -16,19 +16,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var eleventhTwelfth: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        fifthSixth.backgroundColor = .green
+        fifthSixth.backgroundColor = .gray
         fifthSixth.layer.cornerRadius = 10
         fifthSixth.layer.borderWidth = 2
         
-        seventhEigth.backgroundColor = .green
+        seventhEigth.backgroundColor = .gray
         seventhEigth.layer.cornerRadius = 10
         seventhEigth.layer.borderWidth = 2
         
-        ninthTenth.backgroundColor = .green
+        ninthTenth.backgroundColor = .gray
         ninthTenth.layer.cornerRadius = 10
         ninthTenth.layer.borderWidth = 2
         
-        eleventhTwelfth.backgroundColor = .green
+        eleventhTwelfth.backgroundColor = .gray
         eleventhTwelfth.layer.cornerRadius = 10
         eleventhTwelfth.layer.borderWidth = 2
         
