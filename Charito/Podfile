@@ -1,0 +1,4 @@
+target 'Charito' do
+	use_frameworks!
+    	pod 'iosMath'
+end
