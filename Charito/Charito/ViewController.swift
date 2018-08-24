@@ -8,6 +8,9 @@
 
 import UIKit
 
+class TopicTableViewController: UITableViewController {
+
+    var topics: [Topic] = []
 
 class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
@@ -15,7 +18,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var seventhEigth: UIButton!
     @IBOutlet weak var ninthTenth: UIButton!
     @IBOutlet weak var eleventhTwelfth: UIButton!
-    
     let darkGreen = UIColor(red:0.16, green:0.50, blue:0.38, alpha:1.0)
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,3 +50,4 @@ class ViewController: UIViewController {
 
 }
 
+}
