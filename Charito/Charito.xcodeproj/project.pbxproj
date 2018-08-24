@@ -19,7 +19,6 @@
 		2874DE85210BFC7200CD8D25 /* CharitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874DE84210BFC7200CD8D25 /* CharitoTests.swift */; };
 		2874DE90210BFC7200CD8D25 /* CharitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874DE8F210BFC7200CD8D25 /* CharitoUITests.swift */; };
 		32FAE2AA7A13678E4C67E280 /* Pods_Charito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C046AEA67ED177FB539B003 /* Pods_Charito.framework */; };
-		83581B61212E3F1E0045906A /* MathFontBundle in Resources */ = {isa = PBXBuildFile; fileRef = 83581B60212E3F1E0045906A /* MathFontBundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,6 @@
 		2874DE91210BFC7200CD8D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F879649A256DD53867F21F9 /* Pods-Charito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charito.release.xcconfig"; path = "Pods/Target Support Files/Pods-Charito/Pods-Charito.release.xcconfig"; sourceTree = "<group>"; };
 		7F202B95B0212BD776B1C0A4 /* Pods-Charito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charito.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Charito/Pods-Charito.debug.xcconfig"; sourceTree = "<group>"; };
-		83581B60212E3F1E0045906A /* MathFontBundle */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MathFontBundle; path = ../../iosMath/MathFontBundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +90,6 @@
 		2874DE63210BFC7200CD8D25 = {
 			isa = PBXGroup;
 			children = (
-				83581B60212E3F1E0045906A /* MathFontBundle */,
 				2874DE6E210BFC7200CD8D25 /* Charito */,
 				2874DE83210BFC7200CD8D25 /* CharitoTests */,
 				2874DE8E210BFC7200CD8D25 /* CharitoUITests */,
@@ -273,7 +270,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83581B61212E3F1E0045906A /* MathFontBundle in Resources */,
 				2874DE7A210BFC7200CD8D25 /* LaunchScreen.storyboard in Resources */,
 				2874DE77210BFC7200CD8D25 /* Assets.xcassets in Resources */,
 				2874DE75210BFC7200CD8D25 /* Main.storyboard in Resources */,
