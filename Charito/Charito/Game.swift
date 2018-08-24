@@ -10,7 +10,7 @@ import Foundation
 
 class Game {
     
-    let topics: [Topic]
+    var topics: [Topic]
     var pickedTopic: Int
     var score: Float
     
