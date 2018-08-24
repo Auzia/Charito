@@ -9,6 +9,9 @@
 import UIKit
 import iosMath
 
+// Global vars
+var game: Game = Game(topics: [])
+    
 
 class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
@@ -22,9 +25,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view, typically from a nib.
+        let questionPool = [Question(question: "In a 30-60-90 triangle, if the hypotenuse length is 6 inches, how long is the shortest side of the triangle?", arrayOfAnswers: ["2/sqrt3","3","2","2/sqrt2"], correctAnswer: 1), Question(question: "If the circumference of a circle is 30pi, what is its area in terms of pi", arrayOfAnswers: ["15pi","45pi","225pi","900pi"], correctAnswer: 2), Question(question: "Which of the following could be possible side lengths of a right triangle?", arrayOfAnswers: ["5,12,13","4,5,6","7,18,25","7,15,18"],correctAnswer: 0)]
+        
+        
+        let ninthTenthTopic = Topic(name: "9th/10th grade math", description: "Hi", questionPool: questionPool)
+        
+        let topics: [Topic] = [ninthTenthTopic]
 
-        let questionOne = Question(question: "5+6=?", arrayOfAnswers: ["10", "11", "12", "13"] , correctAnswer: 1)
-
+        game = Game(topics: topics)
+        
+        
+        
         fifthSixth.backgroundColor = darkGreen
         fifthSixth.layer.cornerRadius = 10
         fifthSixth.layer.borderWidth = 2
@@ -55,5 +66,6 @@ class ViewController: UIViewController {
 
 
 }
+
 
 
