@@ -1,0 +1,6 @@
+framework module Pods_Charito {
+  umbrella header "Pods-Charito-umbrella.h"
+
+  export *
+  module * { export * }
+}
