@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Math View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Charito" customModuleProvider="target" sceneMemberID="viewController">
@@ -200,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="-404" y="796"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="4kk-LC-8ct">
             <objects>
-                <viewController id="gdT-0V-pVa" sceneMemberID="viewController">
+                <viewController id="gdT-0V-pVa" customClass="QuestionViewController" customModule="Charito" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ezc-cn-6aS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,14 +234,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PH2-4I-Ox0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PH2-4I-Ox0" customClass="MTMathUILabel">
                                 <rect key="frame" x="146" y="191" width="83" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktM-yD-aAL">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktM-yD-aAL" customClass="MTMathUIButton">
                                 <rect key="frame" x="190" y="473" width="175" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.16470588235294117" green="0.49803921568627452" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -257,7 +257,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFZ-iI-eAt">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFZ-iI-eAt" customClass="MTMathUIButton">
                                 <rect key="frame" x="7" y="473" width="175" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.16470588235294117" green="0.49803921568627452" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -271,9 +271,18 @@
                         <viewLayoutGuide key="safeArea" id="NvD-O0-cFp"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Submit Quiz" width="479" id="wZm-uG-KS9"/>
+                        <barButtonItem width="283" id="wZm-uG-KS9"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="answerChoice1Button" destination="CFZ-iI-eAt" id="399-J8-PMH"/>
+                        <outlet property="answerChoice2Button" destination="ktM-yD-aAL" id="A01-9B-MqA"/>
+                        <outlet property="answerChoice3Button" destination="ehu-UX-SfW" id="7Ln-7N-kZs"/>
+                        <outlet property="answerChoice4Button" destination="iXV-lQ-ZX0" id="i4B-Bo-YUd"/>
+                        <outlet property="questionLabel" destination="PH2-4I-Ox0" id="R2S-4Y-k0C"/>
+                        <outlet property="scoreLabel" destination="SAb-iG-SWG" id="LWH-lx-obl"/>
+                        <outlet property="topicLabel" destination="D0K-9t-yuG" id="cW1-ao-Gkc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEW-RO-BBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,6 +291,7 @@
         <!--View Controller-->
         <scene sceneID="2E1-1z-oyc">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vdm-Ed-fCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="oIf-xI-WpD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CbK-NU-48C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -338,7 +348,6 @@
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vdm-Ed-fCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="350" y="796"/>
         </scene>
@@ -539,7 +548,7 @@
                         <viewLayoutGuide key="safeArea" id="oNd-on-mRU"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Submit Quiz" width="479" id="iIM-DW-G3C"/>
+                        <barButtonItem width="479" id="iIM-DW-G3C"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -618,7 +627,7 @@
                         <viewLayoutGuide key="safeArea" id="0tb-pF-n6z"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Submit Quiz" width="479" id="yUM-Ap-DHL"/>
+                        <barButtonItem width="479" id="yUM-Ap-DHL"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -626,10 +635,11 @@
             </objects>
             <point key="canvasLocation" x="1946" y="1575"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="UjL-g0-tIq">
             <objects>
-                <viewController id="sTT-Ze-D8K" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zq9-xt-Dfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="sTT-Ze-D8K" customClass="QuestionViewController" customModule="Charito" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ISx-5A-Qp3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -697,16 +707,15 @@
                         <viewLayoutGuide key="safeArea" id="vi7-hR-pRt"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Submit Quiz" width="479" id="S8m-T8-Xhi"/>
+                        <barButtonItem width="479" id="S8m-T8-Xhi"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zq9-xt-Dfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="350" y="1558"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="T3Q-x6-Kcv"/>
+        <segue reference="LlB-L6-7v7"/>
     </inferredMetricsTieBreakers>
 </document>
