@@ -65,7 +65,6 @@ class QuestionViewController: UIViewController {
         
         //Make sure you track all asked questions
         answeredQs.append(questionIndex)
-        
         print("questionIndex = \(String(questionIndex))")
         question = pool[questionIndex]
         questionLabel.latex = question.question  // latex
