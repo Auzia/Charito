@@ -1,5 +1,5 @@
 //
-//  QuestionPool.swift
+//  File.swift
 //  Charito
 //
 //  Created by Amit on 8/22/18.
@@ -8,6 +8,7 @@
 
 import Foundation
 
+<<<<<<< HEAD
 
 class QuestionPool{
     
@@ -45,6 +46,22 @@ class QuestionPool{
                 Question(question: "", arrayOfAnswers: ["","","",""], correctAnswer: 0)
             ]
     
+=======
+class Question {
+>>>>>>> 4a3dcd841e7a3ba2193c80c7fbe7ea483bbab837
     
+    var question: String
+    var arrayOfAnswers: [String] = ["answer0", "answer1", "answer2", "answer3"]
+    var correctAnswer: Int
     
+    init(question: String, arrayOfAnswers: [String], correctAnswer: Int)
+    {
+        self.question = question
+        
+        if (arrayOfAnswers.count != 4) {
+            print("Error" + self.question)
+        }
+        self.arrayOfAnswers = arrayOfAnswers
+        self.correctAnswer = correctAnswer
+    }
 }
