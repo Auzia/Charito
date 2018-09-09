@@ -13,7 +13,21 @@ class QuestionPool{
     
     // Do any additional setup after loading the view, typically from a nib.
     public let fifthSixthQuestionPool = [
-        Question(question: "", arrayOfAnswers: ["","","",""], correctAnswer: 0)
+        Question(question: "12^2=?", arrayOfAnswers: ["144","121","108","24"], correctAnswer: 144),
+        Question(question: "0^94", arrayOfAnswers: ["94","940","1","0"], correctAnswer: 0),
+        Question(question: "4(10-2)", arrayOfAnswers: ["80","40","32","28"], correctAnswer: 32),
+        Question(question: "5(6-2)", arrayOfAnswers: ["30","20","10","18"], correctAnswer: 20),
+        Question(question: "(63/7)-2", arrayOfAnswers: ["9","53","61","7"], correctAnswer: 7),
+        Question(question: "3(2+3)", arrayOfAnswers: ["1","16","15","18"], correctAnswer: 15),
+        Question(question: "12*2 = c+6", arrayOfAnswers: ["30","20","24","6"], correctAnswer: 30),
+        Question(question: "154-33", arrayOfAnswers: ["123","124","125","23"], correctAnswer: 123),
+        Question(question: "198-106", arrayOfAnswers: ["92","192","96","93"], correctAnswer: 92),
+        Question(question: "13*5", arrayOfAnswers: ["75","65","60","70"], correctAnswer: 65),
+        Question(question: "17*2", arrayOfAnswers: ["34","32","42","44"], correctAnswer: 34),
+        Question(question: "What percent of 30 is 20?", arrayOfAnswers: ["66","33","20","30"], correctAnswer: 66),
+        Question(question: "Out of 30 kids, 50% play baseball. How many kids don't play baseball?", arrayOfAnswers: ["10","30","15","50"], correctAnswer: 15
+            
+
     ]
     
     public let seventhEighthQuestionPool = [
