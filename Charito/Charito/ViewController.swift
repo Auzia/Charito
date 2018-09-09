@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import iosMath
+
 
 // Global vars
 var game: Game = Game(topics: [])
@@ -31,18 +31,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        let questionPool = [Question(question: "In a 30-60-90 triangle, if the hypotenuse length is 6 inches, how long is the shortest side of the triangle?", arrayOfAnswers: ["2/sqrt3","3","2","2/sqrt2"], correctAnswer: 1), Question(question: "If the circumference of a circle is 30pi, what is its area in terms of pi", arrayOfAnswers: ["15pi","45pi","225pi","900pi"], correctAnswer: 2), Question(question: "Which of the following could be possible side lengths of a right triangle?", arrayOfAnswers: ["5,12,13","4,5,6","7,18,25","7,15,18"],correctAnswer: 0)]
+        let questionPool = [Question(question: "In a 30-60-90 triangle, if the hypotenuse length is 6 inches, how long is the shortest side of the triangle?", arrayOfAnswers: ["2/sqrt3","3","2","2/sqrt2"], correctAnswer: 1), Question(question: "If the circumference of a circle is 30pi, what is its area in terms of pi", arrayOfAnswers: ["15pi","45pi","225pi","900pi"], correctAnswer: 2), Question(question: "Which of the following could be possible side lengths of a right triangle?", arrayOfAnswers:["5,12,13","4,5,6","7,18,25","7,15,18"],correctAnswer: 0)]
         
         
         let ninthTenthTopic = Topic(name: "9th/10th grade math", description: "Hi", questionPool: questionPool)
         self.pickCharity.delegate = self
         self.pickCharity.dataSource = self
         pickCharity.tag = 1
-        pickCharityData = ["St. Judes", "Capital Area Food Bank"]
         pickGrade.tag = 2
+        pickCharityData = ["St. Judes", "Capital Area Food Bank"]
         self.pickGrade.delegate = self
         self.pickGrade.dataSource = self
-        pickCharityData = ["5th through 6th", "7th through 8th", "9th through 10th", "11th through 12th"]
+        pickGradeData = ["5th through 6th", "7th through 8th", "9th through 10th", "11th through 12th"]
         let topics: [Topic] = [ninthTenthTopic]
 
         game = Game(topics: topics)
@@ -65,29 +65,21 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if (pickerView.tag == 1){
-            return pickCharityData.count
-        }else if (pickerView.tag == 2){
-            return pickGradeData.count
-        } else {
-            return 1
+        switch(pickerView.tag) {
+        case 1: return pickCharityData.count
+        case 2: return pickGradeData.count
+        default: return 0
         }
     }
     
-    func pickerView(_ pickerView:UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if (pickerView.tag == 1){
-            return pickCharityData[row]
-            
-        }else if (pickerView.tag == 2){
-            return pickGradeData[row]
-        } else {
-            return "YAYYAYA"
-            
+    
+    internal func pickerView(_ pickerView:UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        switch(pickerView.tag) {
+        case 1: return pickCharityData[row]
+        case 2: return pickGradeData[row]
+        default: return nil
         }
     }
-   
 
 }
-
-
 
