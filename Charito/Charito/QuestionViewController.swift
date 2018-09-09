@@ -60,12 +60,14 @@ class QuestionViewController: UIViewController {
         // To test a specific question, uncomment the following line
         questionIndex = 0  // Fill in the index of the question you want to test
         
+        let pools = QuestionPool()
+        let pool = pools.fifthSixthQuestionPool
         
         //Make sure you track all asked questions
         answeredQs.append(questionIndex)
         
         print("questionIndex = \(String(questionIndex))")
-        question = topic.questionPool[questionIndex]
+        question = pool[questionIndex]
         questionLabel.latex = question.question  // latex
         answerChoice1Button.setTitle(question.arrayOfAnswers[0],  for: UIControlState.normal)
         answerChoice2Button.setTitle(question.arrayOfAnswers[1], for: UIControlState.normal)
