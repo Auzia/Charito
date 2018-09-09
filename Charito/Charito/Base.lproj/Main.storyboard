@@ -21,10 +21,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Gg7-3R-hAU">
-                                <rect key="frame" x="10" y="0.0" width="394" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="736"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVX-CI-DwL">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="69"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="69"/>
                                         <color key="backgroundColor" red="0.12030844261634137" green="0.29843672089694079" blue="0.5632267405693242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="69" id="lKl-0f-Jqs"/>
@@ -34,7 +34,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solve math problems to solve world problems" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHF-R3-5Dh">
-                                        <rect key="frame" x="0.0" y="83" width="394" height="100"/>
+                                        <rect key="frame" x="0.0" y="83" width="0.0" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="8yi-Vd-jcd"/>
                                         </constraints>
@@ -43,13 +43,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xst-es-vSE">
-                                        <rect key="frame" x="0.0" y="197" width="394" height="27.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="197" width="0.0" height="27.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bsc-Ap-zfv">
-                                        <rect key="frame" x="0.0" y="238.66666666666666" width="394" height="29.999999999999972"/>
+                                        <rect key="frame" x="0.0" y="238.66666666666666" width="0.0" height="29.999999999999972"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="InQ-fo-t6o"/>
                                         </constraints>
@@ -58,7 +58,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your charity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIE-dR-deL">
-                                        <rect key="frame" x="0.0" y="282.66666666666669" width="394" height="50"/>
+                                        <rect key="frame" x="0.0" y="282.66666666666669" width="0.0" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="IOt-u9-XfA"/>
                                         </constraints>
@@ -67,7 +67,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nyr-IG-Fdf">
-                                        <rect key="frame" x="0.0" y="346.66666666666669" width="394" height="100"/>
+                                        <rect key="frame" x="0.0" y="346.66666666666669" width="0.0" height="100"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="1k3-cB-iZy"/>
@@ -78,7 +78,7 @@
                                         </connections>
                                     </pickerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your grade level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCB-af-xd1">
-                                        <rect key="frame" x="0.0" y="460.66666666666669" width="394" height="50"/>
+                                        <rect key="frame" x="0.0" y="460.66666666666669" width="0.0" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="csj-Vt-S4p"/>
                                         </constraints>
@@ -87,7 +87,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvc-ss-0NK">
-                                        <rect key="frame" x="0.0" y="524.66666666666663" width="394" height="100"/>
+                                        <rect key="frame" x="0.0" y="524.66666666666663" width="0.0" height="100"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" id="1Zf-fg-yep"/>
@@ -99,7 +99,7 @@
                                         </connections>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRm-CO-NzR">
-                                        <rect key="frame" x="0.0" y="638.66666666666663" width="394" height="97.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="638.66666666666663" width="0.0" height="97.333333333333371"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Continue">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -130,10 +130,10 @@
             </objects>
             <point key="canvasLocation" x="750.72463768115949" y="-60.326086956521742"/>
         </scene>
-        <!--View Controller-->
+        <!--About Topic View Controller-->
         <scene sceneID="PrW-4m-Yr2">
             <objects>
-                <viewController id="TpZ-R0-hWL" sceneMemberID="viewController">
+                <viewController id="TpZ-R0-hWL" userLabel="About Topic View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j0v-Dg-b8M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,6 +170,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8l-hl-SwX">
+                                <rect key="frame" x="172.66666666666666" y="651" width="69" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gdT-0V-pVa" kind="show" id="pyL-B7-2Jj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.15294117647058825" green="0.36470588235294116" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -182,6 +192,8 @@
                             <constraint firstItem="sak-PT-ObI" firstAttribute="leading" secondItem="FGd-MS-X2e" secondAttribute="leading" id="ne8-yr-sOG"/>
                             <constraint firstItem="sak-PT-ObI" firstAttribute="leading" secondItem="j0v-Dg-b8M" secondAttribute="leadingMargin" id="oXw-tu-t1d"/>
                             <constraint firstItem="A15-hw-zgQ" firstAttribute="top" secondItem="j0v-Dg-b8M" secondAttribute="top" id="rNQ-Sa-bSV"/>
+                            <constraint firstItem="q8l-hl-SwX" firstAttribute="bottom" secondItem="9Cc-ij-RAM" secondAttribute="bottom" id="th6-9P-FJG"/>
+                            <constraint firstItem="q8l-hl-SwX" firstAttribute="centerX" secondItem="j0v-Dg-b8M" secondAttribute="centerX" id="yrq-t7-DPO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Cc-ij-RAM"/>
                     </view>
@@ -190,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hye-it-sft" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="768"/>
+            <point key="canvasLocation" x="750.72463768115949" y="767.93478260869574"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="4kk-LC-8ct">
