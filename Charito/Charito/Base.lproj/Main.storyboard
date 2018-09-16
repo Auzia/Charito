@@ -133,7 +133,7 @@
         <!--About Topic View Controller-->
         <scene sceneID="PrW-4m-Yr2">
             <objects>
-                <viewController id="TpZ-R0-hWL" userLabel="About Topic View Controller" sceneMemberID="viewController">
+                <viewController id="TpZ-R0-hWL" userLabel="About Topic View Controller" customClass="TopicViewController" customModule="Charito" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j0v-Dg-b8M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
