@@ -247,7 +247,7 @@
                                     <action selector="button4Clicked:" destination="gdT-0V-pVa" eventType="touchUpInside" id="lgZ-0t-YVQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PH2-4I-Ox0" customClass="MTMathUILabel">
+/*                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PH2-4I-Ox0" customClass="MTMathUILabel">
                                 <rect key="frame" x="20" y="191" width="374" height="185"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="185" id="20x-D4-NWE"/>
@@ -256,6 +256,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+*/
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktM-yD-aAL">
                                 <rect key="frame" x="190" y="542" width="214" height="71"/>
                                 <color key="backgroundColor" red="0.16470588235294117" green="0.49803921568627452" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
