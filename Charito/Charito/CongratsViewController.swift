@@ -3,7 +3,7 @@
 //  Triviz
 //
 //  Created by Rohan I on 12/8/17.
-//  Copyright © 2017 Purple Potatoes. All rights reserved.
+//  Copyright © 2017 Auzia. All rights reserved.
 //
 
 import UIKit

@@ -3,7 +3,7 @@
 //  Triviz
 //
 //  Created by Lakshman Krishnaiyer on 12/3/17.
-//  Copyright © 2017 Purple Potatoes. All rights reserved.
+//  Copyright © 2017 Auzia. All rights reserved.
 //
 
 import UIKit
@@ -58,11 +58,11 @@ class QuestionViewController: UIViewController {
         }
         
         // To test a specific question, uncomment the following line
-       questionIndex = 0  // Fill in the index of the question you want to test
+        questionIndex = 0  // Fill in the index of the question you want to test
         
         let pools = QuestionPool()
         let pool = pools.ninthTenthQuestionPool
-        
+       
         //Make sure you track all asked questions
         answeredQs.append(questionIndex)
         print("questionIndex = \(String(questionIndex))")
