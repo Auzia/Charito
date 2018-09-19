@@ -172,12 +172,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8l-hl-SwX">
-                                <rect key="frame" x="172.66666666666666" y="651" width="69" height="41"/>
+                                <rect key="frame" x="178.66666666666666" y="651" width="57" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Start!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Start:" destination="TpZ-R0-hWL" eventType="touchUpInside" id="AIf-6p-ASC"/>
                                     <segue destination="gdT-0V-pVa" kind="show" id="pyL-B7-2Jj"/>
                                 </connections>
                             </button>
