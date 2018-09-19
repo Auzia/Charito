@@ -14,14 +14,13 @@ class TopicViewController: UIViewController{
     @IBOutlet weak var topicDescription: UILabel!
     @IBOutlet weak var topicExamples: UILabel!
     @IBAction func Start(_ sender: Any) {
-        
+        performSegue(withIdentifier: "segue2", sender: (Any).self)
     }
     var grade = ""
     var topic: Topic = Topic()
     var qPool = QuestionPool()
 
     override func viewDidLoad() {
-        print(grade)
         if grade == "fifthSixth"{
             topic = Topic(name: "5th and 6th Grade", description: "You will see basic \n arithmetic on this section", questionPool: qPool.fifthSixthQuestionPool)
             
@@ -32,7 +31,7 @@ class TopicViewController: UIViewController{
             topic = Topic(name: "9th and 10th Grade", description: "You will see algebra\n and geometry on this\n section that is moderately complex.\n You will also see some \nbasic trigonometry.", questionPool: qPool.ninthTenthQuestionPool)
             
         } else if grade == "eleventhTwelfth"{
-            topic = Topic(name: "11th and 12th Grade", description: "You will see some\n trigonometry and other standard questions\n for precalculus and calculus\n students.", questionPool: qPool.eleventhTwelfthQuestionPool)
+            topic = Topic(name: "11th and 12th Grade", description: "You will see some\n trigonometry and other standard\n questions for precalculus and\n calculus students.", questionPool: qPool.eleventhTwelfthQuestionPool)
             
         }
         
@@ -44,7 +43,7 @@ class TopicViewController: UIViewController{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var questionController = segue.destination as! QuestionViewController
-        var questionController.topic1 = topic
-        var questionController.pool = qPool
+        questionController.topic1 = topic
+        questionController.pool = topic.questionPool
     }
 }

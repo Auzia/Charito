@@ -14,7 +14,8 @@ var game: Game = Game(topics: [])
 
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    
+    var gradeSelected = ""
+    var charitySelected = ""
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var pickCharity: UIPickerView!
     @IBOutlet weak var pickGrade: UIPickerView!
@@ -26,11 +27,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         var topicController = segue.destination as! TopicViewController
-        if pickGradeData == ["5th through 6th"]{
+        if gradeSelected == "5th through 6th"{
             topicController.grade = "fifthSixth"
-        } else if pickGradeData == ["7th through 8th"] {
+        } else if gradeSelected == "7th through 8th" {
             topicController.grade = "seventhEighth"
-        } else if pickGradeData == ["9th through 10th"]{
+        } else if gradeSelected == "9th through 10th"{
             topicController.grade = "ninthTenth"
         } else {
             topicController.grade = "eleventhTwelfth"
@@ -81,6 +82,15 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         case 1: return pickCharityData.count
         case 2: return pickGradeData.count
         default: return 0
+        }
+        
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent  component: Int) {
+        switch(pickerView.tag){
+        case 1: return charitySelected = pickCharityData[row] as String
+        case 2: return gradeSelected = pickGradeData[row] as String
+            print(gradeSelected)
+        default: return ()
         }
     }
     

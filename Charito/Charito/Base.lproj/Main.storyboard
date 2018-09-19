@@ -179,7 +179,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Start:" destination="TpZ-R0-hWL" eventType="touchUpInside" id="AIf-6p-ASC"/>
-                                    <segue destination="gdT-0V-pVa" kind="show" id="pyL-B7-2Jj"/>
+                                    <segue destination="gdT-0V-pVa" kind="show" identifier="segue2" id="pyL-B7-2Jj"/>
                                 </connections>
                             </button>
                         </subviews>
