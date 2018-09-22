@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -258,8 +256,8 @@
                                     <action selector="button2Clicked:" destination="gdT-0V-pVa" eventType="touchUpInside" id="m1y-i3-5eO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAb-iG-SWG">
-                                <rect key="frame" x="166" y="81" width="45" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAb-iG-SWG">
+                                <rect key="frame" x="166" y="81" width="45" height="284"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -323,13 +321,13 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="answerChoice1Button" destination="CFZ-iI-eAt" id="399-J8-PMH"/>
-                        <outlet property="answerChoice2Button" destination="ktM-yD-aAL" id="A01-9B-MqA"/>
-                        <outlet property="answerChoice3Button" destination="ehu-UX-SfW" id="7Ln-7N-kZs"/>
-                        <outlet property="answerChoice4Button" destination="iXV-lQ-ZX0" id="i4B-Bo-YUd"/>
-                        <outlet property="questionLabel" destination="PH2-4I-Ox0" id="R2S-4Y-k0C"/>
-                        <outlet property="scoreLabel" destination="SAb-iG-SWG" id="LWH-lx-obl"/>
-                        <outlet property="topicLabel" destination="D0K-9t-yuG" id="cW1-ao-Gkc"/>
+                        <outlet property="answerChoice1Button" destination="CFZ-iI-eAt" id="nPS-z2-c4g"/>
+                        <outlet property="answerChoice2Button" destination="ktM-yD-aAL" id="mLg-aU-rSp"/>
+                        <outlet property="answerChoice3Button" destination="ehu-UX-SfW" id="zSs-g4-0bk"/>
+                        <outlet property="answerChoice4Button" destination="iXV-lQ-ZX0" id="bSd-5x-Wbo"/>
+                        <outlet property="questionLabel" destination="PH2-4I-Ox0" id="jCQ-Ex-R4H"/>
+                        <outlet property="scoreLabel" destination="SAb-iG-SWG" id="T9z-NQ-JmU"/>
+                        <outlet property="topicLabel" destination="D0K-9t-yuG" id="E7y-DY-YP9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEW-RO-BBt" userLabel="First Responder" sceneMemberID="firstResponder"/>

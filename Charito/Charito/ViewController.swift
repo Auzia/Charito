@@ -29,8 +29,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         super.viewDidLoad()
         let pools = QuestionPool()
         
+        let fifthSixthTopic = Topic(name: "5th/6th grade math", description: "Hey", questionPool: pools.fifthSixthQuestionPool)
+        let seventhEighthTopic = Topic(name: "7th/8th grade math", description: "Hola", questionPool: pools.seventhEighthQuestionPool)
         let ninthTenthTopic = Topic(name: "9th/10th grade math", description: "Hi", questionPool: pools.ninthTenthQuestionPool)
-
+        let eleventhTwelfthTopic = Topic(name: "11th/12th grade math", description: "Hello", questionPool: pools.eleventhTwelfthQuestionPool)
         
         self.pickCharity.delegate = self
         self.pickCharity.dataSource = self
