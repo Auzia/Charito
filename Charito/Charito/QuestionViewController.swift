@@ -58,7 +58,11 @@ class QuestionViewController: UIViewController {
         }
         
         // To test a specific question, uncomment the following line
+<<<<<<< HEAD
+        questionIndex = 12  // Fill in the index of the question you want to test
+=======
         questionIndex = 7  // Fill in the index of the question you want to test
+>>>>>>> 735b2b8e1280c5a123e47b4fe5e7b2071b54e82d
         
         //let pools = QuestionPool()
         //let pool = pools.eleventhTwelfthQuestionPool
