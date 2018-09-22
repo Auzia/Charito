@@ -11,14 +11,32 @@ import UIKit
 
 // Global vars
 var game: Game = Game(topics: [])
-    
+
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var pickCharity: UIPickerView!
     @IBOutlet weak var pickGrade: UIPickerView!
-    
+    @IBAction func Continue(_ sender: Any) {
+        if pickGradeData != nil{
+            performSegue(withIdentifier: "segue1", sender: (Any).self)
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        var topicController = segue.destination as! TopicViewController
+        if pickGradeData == ["5th through 6th"]{
+            topicController.grade = "fifthSixth"
+        } else if pickGradeData == ["7th through 8th"] {
+            topicController.grade = "seventhEighth"
+        } else if pickGradeData == ["9th through 10th"]{
+            topicController.grade = "ninthTenth"
+        } else {
+            topicController.grade = "eleventhTwelfth"
+        }
+        //REPLACE LAST WITH ACTUAL 11TH 12TH CLASS AND ADD ELSE ALERT OF NOTHING CHOSEN
+    }
     var pickCharityData: [String] = [String]()
     var pickGradeData: [String] = [String]()
 

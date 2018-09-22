@@ -10,7 +10,7 @@ import UIKit
 import iosMath
 
 class QuestionViewController: UIViewController {
-    var topic: Topic = Topic()
+    var topic1: Topic = Topic()
     
     @IBOutlet weak var topicLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -44,25 +44,29 @@ class QuestionViewController: UIViewController {
         }
         
         // Do any additional setup after loading the view.
-        topicLabel.text = topic.name
+        topicLabel.text = topic1.name
         scoreLabel.text = "\(correctAnswers) / \(answeredQs.count)"
         
         // Pick a question
-        var questionIndex =  Int(arc4random_uniform(UInt32(topic.questionPool.count)))
+        var questionIndex =  Int(arc4random_uniform(UInt32(topic1.questionPool.count)))
         
         
         //Make sure the question is new
         while (answeredQs.contains(questionIndex)) {
             //Look for a new question
-            questionIndex = Int(arc4random_uniform(UInt32(topic.questionPool.count)))
+            questionIndex = Int(arc4random_uniform(UInt32(topic1.questionPool.count)))
         }
         
         // To test a specific question, uncomment the following line
+<<<<<<< HEAD
         questionIndex = 12  // Fill in the index of the question you want to test
+=======
+        questionIndex = 7  // Fill in the index of the question you want to test
+>>>>>>> 735b2b8e1280c5a123e47b4fe5e7b2071b54e82d
         
         let pools = QuestionPool()
-        let pool = pools.ninthTenthQuestionPool
-       
+        let pool = pools.eleventhTwelfthQuestionPool
+
         //Make sure you track all asked questions
         answeredQs.append(questionIndex)
         print("questionIndex = \(String(questionIndex))")
