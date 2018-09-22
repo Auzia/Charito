@@ -20,24 +20,24 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var pickCharity: UIPickerView!
     @IBOutlet weak var pickGrade: UIPickerView!
     @IBAction func Continue(_ sender: Any) {
-        if pickGradeData != nil{
+        if pickGradeData.count > 0 {
             performSegue(withIdentifier: "segue1", sender: (Any).self)
         }
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue1" {
-        var topicController = segue.destination as! TopicViewController
-        if gradeSelected == "11th through 12th"{
-            topicController.grade = "eleventhTwelfth"
-        } else if gradeSelected == "7th through 8th" {
-            topicController.grade = "seventhEighth"
-        } else if gradeSelected == "9th through 10th"{
-            topicController.grade = "ninthTenth"
-        } else {
-            topicController.grade = "fifthSixth"
-        }
-        //REPLACE LAST WITH ACTUAL 11TH 12TH CLASS AND ADD ELSE ALERT OF NOTHING CHOSEN
+            var topicController = segue.destination as! TopicViewController
+            if gradeSelected == "11th through 12th"{
+                topicController.grade = "eleventhTwelfth"
+            } else if gradeSelected == "7th through 8th" {
+                topicController.grade = "seventhEighth"
+            } else if gradeSelected == "9th through 10th"{
+                topicController.grade = "ninthTenth"
+            } else {
+                topicController.grade = "fifthSixth"
+            }
+            //REPLACE LAST WITH ACTUAL 11TH 12TH CLASS AND ADD ELSE ALERT OF NOTHING CHOSEN
         }
     }
     var pickCharityData: [String] = [String]()
@@ -55,6 +55,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         let ninthTenthTopic = Topic(name: "9th/10th grade math", description: "Hi", questionPool: pools.ninthTenthQuestionPool)
         let eleventhTwelfthTopic = Topic(name: "11th/12th grade math", description: "Hello", questionPool: pools.eleventhTwelfthQuestionPool)
         
+
         self.pickCharity.delegate = self
         self.pickCharity.dataSource = self
         pickCharity.tag = 1
