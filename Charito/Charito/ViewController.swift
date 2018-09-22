@@ -23,9 +23,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         if pickGradeData != nil{
             performSegue(withIdentifier: "segue1", sender: (Any).self)
         }
+        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "segue1" {
         var topicController = segue.destination as! TopicViewController
         if gradeSelected == "5th through 6th"{
             topicController.grade = "fifthSixth"
@@ -37,6 +38,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             topicController.grade = "eleventhTwelfth"
         }
         //REPLACE LAST WITH ACTUAL 11TH 12TH CLASS AND ADD ELSE ALERT OF NOTHING CHOSEN
+        }
     }
     var pickCharityData: [String] = [String]()
     var pickGradeData: [String] = [String]()

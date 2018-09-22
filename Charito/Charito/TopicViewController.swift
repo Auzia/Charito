@@ -42,8 +42,10 @@ class TopicViewController: UIViewController{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var questionController = segue.destination as! QuestionViewController
-        questionController.topic1 = topic
-        questionController.pool = topic.questionPool
+        if segue.identifier == "segue2" {
+            var questionController = segue.destination as! QuestionViewController
+            questionController.topic1 = topic
+            questionController.pool = topic.questionPool
+        }
     }
 }
