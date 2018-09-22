@@ -18,6 +18,7 @@ class TopicViewController: UIViewController{
     }
     var grade = ""
     var topic: Topic = Topic()
+    var charity = ""
     var qPool = QuestionPool()
 
     override func viewDidLoad() {
