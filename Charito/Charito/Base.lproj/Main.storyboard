@@ -103,7 +103,8 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="TpZ-R0-hWL" kind="show" id="dzy-tN-8BZ"/>
+                                            <action selector="Continue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W8J-3V-dJp"/>
+                                            <segue destination="TpZ-R0-hWL" kind="show" identifier="segue1" id="dzy-tN-8BZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -131,7 +132,7 @@
         <!--About Topic View Controller-->
         <scene sceneID="PrW-4m-Yr2">
             <objects>
-                <viewController id="TpZ-R0-hWL" userLabel="About Topic View Controller" sceneMemberID="viewController">
+                <viewController id="TpZ-R0-hWL" userLabel="About Topic View Controller" customClass="TopicViewController" customModule="Charito" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j0v-Dg-b8M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,20 +163,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic examples" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGd-MS-X2e">
-                                <rect key="frame" x="20" y="259" width="166" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Topic examples" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGd-MS-X2e">
+                                <rect key="frame" x="20" y="259" width="374" height="369"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8l-hl-SwX">
-                                <rect key="frame" x="172.66666666666666" y="651" width="69" height="41"/>
+                                <rect key="frame" x="178.66666666666666" y="651" width="57" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Start!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gdT-0V-pVa" kind="show" id="pyL-B7-2Jj"/>
+                                    <action selector="Start:" destination="TpZ-R0-hWL" eventType="touchUpInside" id="AIf-6p-ASC"/>
+                                    <segue destination="gdT-0V-pVa" kind="show" identifier="segue2" id="pyL-B7-2Jj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -197,6 +199,11 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="topicDescription" destination="sak-PT-ObI" id="zK0-eE-zsV"/>
+                        <outlet property="topicExamples" destination="FGd-MS-X2e" id="h1l-Tv-9ji"/>
+                        <outlet property="topicName" destination="WGL-TC-IfU" id="tiW-dj-ckk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hye-it-sft" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

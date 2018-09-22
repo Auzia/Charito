@@ -22,6 +22,7 @@
 		2874DE85210BFC7200CD8D25 /* CharitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874DE84210BFC7200CD8D25 /* CharitoTests.swift */; };
 		2874DE90210BFC7200CD8D25 /* CharitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874DE8F210BFC7200CD8D25 /* CharitoUITests.swift */; };
 		32FAE2AA7A13678E4C67E280 /* Pods_Charito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C046AEA67ED177FB539B003 /* Pods_Charito.framework */; };
+		602F0F57214F08E3009EB7F9 /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F0F56214F08E3009EB7F9 /* TopicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		2874DE8F210BFC7200CD8D25 /* CharitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitoUITests.swift; sourceTree = "<group>"; };
 		2874DE91210BFC7200CD8D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F879649A256DD53867F21F9 /* Pods-Charito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charito.release.xcconfig"; path = "Pods/Target Support Files/Pods-Charito/Pods-Charito.release.xcconfig"; sourceTree = "<group>"; };
+		602F0F56214F08E3009EB7F9 /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		7F202B95B0212BD776B1C0A4 /* Pods-Charito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charito.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Charito/Pods-Charito.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 				2874DE71210BFC7200CD8D25 /* ViewController.swift */,
 				2874DE76210BFC7200CD8D25 /* Assets.xcassets */,
 				2874DE73210BFC7200CD8D25 /* Main.storyboard */,
+				602F0F56214F08E3009EB7F9 /* TopicViewController.swift */,
 				2874DE78210BFC7200CD8D25 /* LaunchScreen.storyboard */,
 				2874DE7B210BFC7200CD8D25 /* Info.plist */,
 				28167AAB212E366100EE65FE /* QuestionPool.swift */,
@@ -356,6 +359,7 @@
 				2874DE70210BFC7200CD8D25 /* AppDelegate.swift in Sources */,
 				280B28C421534D970017F1FC /* QuestionViewController.swift in Sources */,
 				280453282144523B009E4AB7 /* CongratsViewController.swift in Sources */,
+				602F0F57214F08E3009EB7F9 /* TopicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

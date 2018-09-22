@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class QuestionViewController: UIViewController {
-    var topic: Topic = Topic()
+    var topic1: Topic = Topic()
     
     
     
@@ -27,8 +27,10 @@ class QuestionViewController: UIViewController {
     var answeredQs: [Int] = []
     var correctAnswers: Int = 0
     var total: Int = 10
-    var question: Question = Question(question: "", arrayOfAnswers: [], correctAnswer: 0)
-    
+
+    var question: Question = Question(question: "", arrayOfAnswers: [],  correctAnswer: 0)
+    var pool = QuestionPool().fifthSixthQuestionPool //placeholder
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
@@ -47,23 +49,33 @@ class QuestionViewController: UIViewController {
         }
         
         // Do any additional setup after loading the view.
-        topicLabel.text = topic.name
+        topicLabel.text = topic1.name
         scoreLabel.text = "\(correctAnswers) / \(answeredQs.count)"
         
         // Pick a question
-        var questionIndex =  Int(arc4random_uniform(UInt32(topic.questionPool.count)))
+        var questionIndex = Int (arc4random_uniform(UInt32(topic1.questionPool.count)))
         
         
         //Make sure the question is new
         while (answeredQs.contains(questionIndex)) {
             //Look for a new question
-            questionIndex = Int(arc4random_uniform(UInt32(topic.questionPool.count)))
+            questionIndex = Int (arc4random_uniform(UInt32(topic1.questionPool.count)))
         }
+
+        
+        // To test a specific question, uncomment the following line
+
+        questionIndex = 12  // Fill in the index of the question you want to test
+
+        //let pools = QuestionPool()
+        //let pool = pools.eleventhTwelfthQuestionPool
+
+
         //Make sure you track all asked questions
         answeredQs.append(questionIndex)
         
         print("questionIndex = \(String(questionIndex))")
-        question = topic.questionPool[questionIndex]
+        question = topic1.questionPool[questionIndex]
         questionLabel.text = question.question  // latex
         answerChoice1Button.setTitle(question.arrayOfAnswers[0],  for: UIControlState.normal)
         answerChoice2Button.setTitle(question.arrayOfAnswers[1], for: UIControlState.normal)

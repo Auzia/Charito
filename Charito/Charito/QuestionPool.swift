@@ -12,36 +12,36 @@ class QuestionPool{
     
     // Do any additional setup after loading the view, typically from a nib.
     public let fifthSixthQuestionPool = [
-        Question(question: "12^2=?", arrayOfAnswers: ["144","121","108","24"], correctAnswer: 144),
-        Question(question: "0^94", arrayOfAnswers: ["94","940","1","0"], correctAnswer: 0),
-        Question(question: "4(10-2)", arrayOfAnswers: ["80","40","32","28"], correctAnswer: 32),
-        Question(question: "5(6-2)", arrayOfAnswers: ["30","20","10","18"], correctAnswer: 20),
-        Question(question: "(63/7)-2", arrayOfAnswers: ["9","53","61","7"], correctAnswer: 7),
-        Question(question: "3(2+3)", arrayOfAnswers: ["1","16","15","18"], correctAnswer: 15),
-        Question(question: "12*2 = c+6", arrayOfAnswers: ["30","20","24","6"], correctAnswer: 30),
-        Question(question: "154-33", arrayOfAnswers: ["123","124","125","23"], correctAnswer: 123),
-        Question(question: "198-106", arrayOfAnswers: ["92","192","96","93"], correctAnswer: 92),
-        Question(question: "13*5", arrayOfAnswers: ["75","65","60","70"], correctAnswer: 65),
-        Question(question: "17*2", arrayOfAnswers: ["34","32","42","44"], correctAnswer: 34),
-        Question(question: "What percent of 30 is 20?", arrayOfAnswers: ["66","33","20","30"], correctAnswer: 66),
-        Question(question: "Out of 30 kids, 50% play baseball. How many kids don't play baseball?", arrayOfAnswers: ["10","30","15","50"], correctAnswer: 15),
-        Question(question: "1:7 = 2:?", arrayOfAnswers: ["15","8","14","6"], correctAnswer: 14),
-        Question(question: "1:8 = ?:24", arrayOfAnswers: ["3","2","16","15"], correctAnswer: 3),
-        Question(question: "3:54 = ?:18", arrayOfAnswers: ["1","2","3","4"], correctAnswer: 1),
-        Question(question: "What's the volume of a cube with sides that are 3 units long?", arrayOfAnswers: ["27","9","12","6"], correctAnswer: 27),
-        Question(question: "What's the volume of a cube with sides that are 5 units long?", arrayOfAnswers: ["120","125","12","25"], correctAnswer: 125),
-        Question(question: "What's the volume of a cube with sides that are 10 units long?", arrayOfAnswers: ["100","1000","10","10000"], correctAnswer: 1000),
-        Question(question: "99-64=?", arrayOfAnswers: ["34","35","45","65"], correctAnswer: 35),
-        Question(question: "66/3", arrayOfAnswers: ["2","22","33","23"], correctAnswer: 22),
-        Question(question: "99-43=?", arrayOfAnswers: ["56","76","66","55"], correctAnswer: 56),
-        Question(question: "Which one is an obtuse angle?", arrayOfAnswers: ["181","18","90","80"], correctAnswer: 181),
-        Question(question: "Which one is an acute angle?", arrayOfAnswers: ["32","222","90","180"], correctAnswer: 31),
-        Question(question: "How many degrees are in a right angle?", arrayOfAnswers: ["180","90","45","60"], correctAnswer: 90)
+        Question(question: "12^2=?", arrayOfAnswers: ["144","121","108","24"], correctAnswer: 0),
+        Question(question: "0^9=?", arrayOfAnswers: ["9","90","1","0"], correctAnswer: 3),
+        Question(question: "4(10-2)", arrayOfAnswers: ["80","40","32","28"], correctAnswer: 2),
+        Question(question: "5(6-2)", arrayOfAnswers: ["30","20","10","18"], correctAnswer: 1),
+        Question(question: "(63/7)-2", arrayOfAnswers: ["9","53","61","7"], correctAnswer: 3),
+        Question(question: "3(2+3)", arrayOfAnswers: ["1","16","15","18"], correctAnswer: 2),
+        Question(question: "12\\times 3 = c+6", arrayOfAnswers: ["30","20","24","6"], correctAnswer: 0),
+        Question(question: "154-33", arrayOfAnswers: ["123","124","125","23"], correctAnswer: 0),
+        Question(question: "198-106", arrayOfAnswers: ["92","192","96","93"], correctAnswer: 0),
+        Question(question: "135-70", arrayOfAnswers: ["75","65","60","70"], correctAnswer: 1),
+        Question(question: "17\\times 2", arrayOfAnswers: ["34","32","42","44"], correctAnswer: 0),
+        Question(question: "What percent of 30 is 20?", arrayOfAnswers: ["66","33","20","30"], correctAnswer: 0),
+        Question(question: "Out\\ of\\ 30\\ kids,\\\\ 50\\%\\ play\\ baseball.\\\\ How\\ many\\ kids\\ don't\\\\ play\\ baseball?", arrayOfAnswers: ["10","30","15","50"], correctAnswer: 2),
+        Question(question: "1:7 = 2:?", arrayOfAnswers: ["15","8","14","6"], correctAnswer: 2),
+        Question(question: "1:8 = ?:24", arrayOfAnswers: ["3","2","16","15"], correctAnswer: 0),
+        Question(question: "3:54 = ?:18", arrayOfAnswers: ["1","2","3","4"], correctAnswer: 0),
+        Question(question: "What'\\s\\ the\\ volume\\ of\\ a\\ cube\\ with\\ sides\\ that\\ are\\ 3\\ units long?", arrayOfAnswers: ["27","9","12","6"], correctAnswer: 0),
+        Question(question: "What\\'s\\ the\\ volume\\ of\\ a\\ cube\\ with\\ sides\\ that\\ are\\ 5\\ units\\ long?", arrayOfAnswers: ["120","125","12","25"], correctAnswer: 1),
+        Question(question: "What's\\ the\\ volume\\ of\\ a\\ cube\\ with\\ sides\\ that\\ are\\ 10\\ units\\ long?", arrayOfAnswers: ["100","1000","10","10000"], correctAnswer: 1),
+        Question(question: "99-64=?", arrayOfAnswers: ["34","35","45","65"], correctAnswer: 1),
+        Question(question: "66/3", arrayOfAnswers: ["2","22","33","23"], correctAnswer: 1),
+        Question(question: "99-43=?", arrayOfAnswers: ["56","76","66","55"], correctAnswer: 0),
+        Question(question: "Which one is an obtuse angle?", arrayOfAnswers: ["181","18","90","80"], correctAnswer: 0),
+        Question(question: "Which one is an acute angle?", arrayOfAnswers: ["32","222","90","180"], correctAnswer: 0),
+        Question(question: "How many degrees are in a right angle?", arrayOfAnswers: ["180","90","45","60"], correctAnswer: 1)
         
     ]
     
     public let seventhEighthQuestionPool = [
-        Question(question: "", arrayOfAnswers: ["","","",""], correctAnswer: 0)
+        Question(question: "HI", arrayOfAnswers: ["5","5","7","5"], correctAnswer: 0)
     ]
     
     public let ninthTenthQuestionPool = [
@@ -86,8 +86,8 @@ class QuestionPool{
         Question(question: "\\lim_{x\\to\\infty} \\frac{2^{-x}}{3^x}", arrayOfAnswers: ["\\-infty", "2", "infty", "3"], correctAnswer: 2),
         Question(question: "\\lim_{x\\to\\infty} \\frac{5 + e^{-x}}{1 - e^{-x}}", arrayOfAnswers: ["\\-infty", "5", "infty", "1"], correctAnswer: 1),
         Question(question: "If\\ f(x) = x^{2/3},\\ which\\ of\\ the\\\\ following\\ statements\\ is\\ NOT\\ true?", arrayOfAnswers: ["The\\ graph\\ of\\ f(x)\\ is\\ symmetric\\ with\\ respect\\ to\\ the\\ y-axis.", "f(x)\\ is\\ an\\ even\\ function.", "The\\ range\\ of\\ f(x)\\ is\\ all\\ real\\ numbers", "f(x)\\ is\\ a\\ function."], correctAnswer: 2 ),
-        Question(question: "The sum of the base and the height of a triangle is 30 centimeters. Find the maximum area of the triangle.", arrayOfAnswers: ["112.5", "105.5", "225", "305"], correctAnswer: 0),
-        Question(question: "The sum of the base and the height of a square is 100 centimeters. Find the maximum area of the triangle.", arrayOfAnswers: ["250", "1000", "100", "2500"], correctAnswer: 3),
+        Question(question: "The\\ sum\\ of\\ the\\ base\\ and\\ the\\ height\\ of\\ a\\ triangle\\ is\\ 30\\ centimeters.\\ Find\\ the\\ maximum\\ area\\ of\\ the\\ triangle.", arrayOfAnswers: ["112.5", "105.5", "225", "305"], correctAnswer: 0),
+        Question(question: "The\\ sum\\ of\\ the base and the height of a square is 100 centimeters. Find the maximum area of the triangle.", arrayOfAnswers: ["250", "1000", "100", "2500"], correctAnswer: 3),
         Question(question: "If f(x) is a one-to-one function, and f(9) = 11, then which of the following CANNOT be true?", arrayOfAnswers: ["f(8) = 11", "f^{-1}(11) = 9", "f(-9) = -11", "f(-11) = -9"], correctAnswer: 1),
         Question(question: "What is \\frac{secx}{cscx}?", arrayOfAnswers: ["0", "sin(x)", "tan(x)", "cos(x)"], correctAnswer: 2),
         Question(question: "If the radius of a circle is 18 cm, what would be the measure of an angle that cuts an arc of length //pi cm", arrayOfAnswers: ["10 degrees", "\\pi radians", "360 degrees", "50 degrees"], correctAnswer: 0),
