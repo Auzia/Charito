@@ -23,6 +23,7 @@
 		2874DE90210BFC7200CD8D25 /* CharitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874DE8F210BFC7200CD8D25 /* CharitoUITests.swift */; };
 		32FAE2AA7A13678E4C67E280 /* Pods_Charito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C046AEA67ED177FB539B003 /* Pods_Charito.framework */; };
 		602F0F57214F08E3009EB7F9 /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F0F56214F08E3009EB7F9 /* TopicViewController.swift */; };
+		602F0F5921569582009EB7F9 /* CharityPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F0F5821569582009EB7F9 /* CharityPool.swift */; };
 		8377E28921569317007C659E /* Charity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8377E28821569317007C659E /* Charity.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		2874DE91210BFC7200CD8D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F879649A256DD53867F21F9 /* Pods-Charito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charito.release.xcconfig"; path = "Pods/Target Support Files/Pods-Charito/Pods-Charito.release.xcconfig"; sourceTree = "<group>"; };
 		602F0F56214F08E3009EB7F9 /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
+		602F0F5821569582009EB7F9 /* CharityPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityPool.swift; sourceTree = "<group>"; };
 		7F202B95B0212BD776B1C0A4 /* Pods-Charito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charito.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Charito/Pods-Charito.debug.xcconfig"; sourceTree = "<group>"; };
 		8377E28821569317007C659E /* Charity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 				280453272144523B009E4AB7 /* CongratsViewController.swift */,
 				2874DE6F210BFC7200CD8D25 /* AppDelegate.swift */,
 				2874DE71210BFC7200CD8D25 /* ViewController.swift */,
+				602F0F5821569582009EB7F9 /* CharityPool.swift */,
 				2874DE76210BFC7200CD8D25 /* Assets.xcassets */,
 				2874DE73210BFC7200CD8D25 /* Main.storyboard */,
 				602F0F56214F08E3009EB7F9 /* TopicViewController.swift */,
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28167AB0212E3B3C00EE65FE /* Topic.swift in Sources */,
+				602F0F5921569582009EB7F9 /* CharityPool.swift in Sources */,
 				28028289212F7EE600D588D0 /* Game.swift in Sources */,
 				8377E28921569317007C659E /* Charity.swift in Sources */,
 				2874DE72210BFC7200CD8D25 /* ViewController.swift in Sources */,
