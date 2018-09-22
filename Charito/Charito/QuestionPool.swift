@@ -30,7 +30,11 @@ class QuestionPool{
     ]
     
     public let seventhEighthQuestionPool = [
-        Question(question: "", arrayOfAnswers: ["","","",""], correctAnswer: 0)
+        Question(question: "What\\ is\\ the\\ area\\ of\\ a\\ triangle\\ with\\ a\\ hight\\ of\\ 6cm\\ and\\ a\\ width\\ of\\ 3\\ cm.", arrayOfAnswers: ["18 cm^2","24 cm^2","14 cm^2","19 cm^2"], correctAnswer: 0),
+        Question(question: "The side of a square is 8 cm long. What is it's perimeter", arrayOfAnswers: ["14 cm","18 cm","11 cm","12 cm"], correctAnswer: 3),
+        Question(question: "Solve for x. ax + 3x = bx + 5.", arrayOfAnswers: ["3\\frac(a + 5 - b)","5\\frac(b + 3 - a","5\\frac(a + 3 - b)","3\\frac(b + 5 + a)"], correctAnswer: 2),
+        Question(question: "Solve 10x^2 = 6 + 9x", arrayOfAnswers: ["\\frac{5\\pm\\sqrt{65}}{-2}","\\frac{9\\pm\\sqrt{321}}{20}","\\frac{4\\pm\\sqrt{26}}{10}","\\frac{-1\\pm\\sqrt{109}}{18}"], correctAnswer: 1),
+        //Question(question: <#T##String#>, arrayOfAnswers: <#T##[String]#>, correctAnswer: <#T##Int#>)
     ]
     
     public let ninthTenthQuestionPool = [
