@@ -25,7 +25,7 @@ class QuestionViewController: UIViewController {
     var correctAnswers: Int = 0
     var total: Int = 10
     var question: Question = Question(question: "", arrayOfAnswers: [],  correctAnswer: 0)
-    
+    var pool = QuestionPool().fifthSixthQuestionPool //placeholder
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
@@ -62,8 +62,8 @@ class QuestionViewController: UIViewController {
         questionIndex = 12  // Fill in the index of the question you want to test
 
         
-        let pools = QuestionPool()
-        let pool = pools.eleventhTwelfthQuestionPool
+        //let pools = QuestionPool()
+        //let pool = pools.eleventhTwelfthQuestionPool
 
         //Make sure you track all asked questions
         answeredQs.append(questionIndex)
