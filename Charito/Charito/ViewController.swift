@@ -52,7 +52,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         let ninthTenthTopic = Topic(name: "9th/10th grade math", description: "Hi", questionPool: pools.ninthTenthQuestionPool)
 
-        
         self.pickCharity.delegate = self
         self.pickCharity.dataSource = self
         pickCharity.tag = 1

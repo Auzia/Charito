@@ -9,17 +9,20 @@
 import UIKit
 import iosMath
 
-class QuestionViewController: UIViewController {
+class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var topic1: Topic = Topic()
     
     @IBOutlet weak var topicLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var questionLabel: MTMathUILabel!
+    @IBOutlet weak var answerChoice1: MTMathUILabel!
+    @IBOutlet weak var answerChoice2: MTMathUILabel!
+    @IBOutlet weak var answerChoice3: MTMathUILabel!
+    @IBOutlet weak var answerChoice4: MTMathUILabel!
+    @IBOutlet weak var answerPicker: UIPickerView!
     
-    @IBOutlet var answerChoice1Button: UIButton!
-    @IBOutlet var answerChoice2Button: UIButton!
-    @IBOutlet var answerChoice3Button: UIButton!
-    @IBOutlet var answerChoice4Button: UIButton!
+    var answerPickerData: [String] = [String]()
+    
     
     var answeredQs: [Int] = []
     var correctAnswers: Int = 0
@@ -42,6 +45,10 @@ class QuestionViewController: UIViewController {
             }
             return
         }
+        //setting up the picker view
+        self.answerPicker.delegate = self as? UIPickerViewDelegate
+        self.answerPicker.dataSource = self as? UIPickerViewDataSource
+        answerPickerData = ["A", "B", "C", "D"]
         
         // Do any additional setup after loading the view.
         topicLabel.text = topic1.name
@@ -58,21 +65,18 @@ class QuestionViewController: UIViewController {
         }
         
         // To test a specific question, uncomment the following line
-
         questionIndex = 12  // Fill in the index of the question you want to test
-
-        //let pools = QuestionPool()
-        //let pool = pools.eleventhTwelfthQuestionPool
-
+        
         //Make sure you track all asked questions
         answeredQs.append(questionIndex)
         print("questionIndex = \(String(questionIndex))")
         question = pool[questionIndex]
-        questionLabel.latex = question.question  // latex
-        answerChoice1Button.setTitle(question.arrayOfAnswers[0],  for: UIControlState.normal)
-        answerChoice2Button.setTitle(question.arrayOfAnswers[1], for: UIControlState.normal)
-        answerChoice3Button.setTitle(question.arrayOfAnswers[2], for: UIControlState.normal)
-        answerChoice4Button.setTitle(question.arrayOfAnswers[3], for: UIControlState.normal)
+        questionLabel.latex = question.question // latex
+        
+        answerChoice1.latex = question.arrayOfAnswers[0]
+        answerChoice2.latex = question.arrayOfAnswers[1]
+        answerChoice3.latex = question.arrayOfAnswers[2]
+        answerChoice4.latex = question.arrayOfAnswers[3]
         
     }
     override func didReceiveMemoryWarning() {
@@ -105,27 +109,20 @@ class QuestionViewController: UIViewController {
         }
     }
     
-    @IBAction func button1Clicked(_ sender: Any) {
-        let answerClicked = answerChoice1Button.titleLabel?.text
-        checkAnswer(answerClicked: answerClicked!)
-        
-    }
-    @IBAction func button2Clicked(_ sender: Any) {
-        let answerClicked = answerChoice2Button.titleLabel?.text
-        checkAnswer(answerClicked: answerClicked!)
-
-    }
-    @IBAction func button3Clicked(_ sender: Any) {
-        let answerClicked = answerChoice3Button.titleLabel?.text
-        checkAnswer(answerClicked: answerClicked!)
-
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
     
-    @IBAction func button4Clicked(_ sender: Any) {
-        let answerClicked = answerChoice4Button.titleLabel?.text
-        checkAnswer(answerClicked: answerClicked!)
-
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return answerPickerData.count
     }
+    
+    
+    internal func pickerView(_ pickerView:UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return answerPickerData[row]
+    }
+    
+
     
     
     
