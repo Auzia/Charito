@@ -61,7 +61,6 @@ class QuestionViewController: UIViewController {
 
         questionIndex = 12  // Fill in the index of the question you want to test
 
-        
         //let pools = QuestionPool()
         //let pool = pools.eleventhTwelfthQuestionPool
 
