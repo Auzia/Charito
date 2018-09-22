@@ -28,14 +28,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue1" {
         var topicController = segue.destination as! TopicViewController
-        if gradeSelected == "5th through 6th"{
-            topicController.grade = "fifthSixth"
+        if gradeSelected == "11th through 12th"{
+            topicController.grade = "eleventhTwelfth"
         } else if gradeSelected == "7th through 8th" {
             topicController.grade = "seventhEighth"
         } else if gradeSelected == "9th through 10th"{
             topicController.grade = "ninthTenth"
         } else {
-            topicController.grade = "eleventhTwelfth"
+            topicController.grade = "fifthSixth"
         }
         //REPLACE LAST WITH ACTUAL 11TH 12TH CLASS AND ADD ELSE ALERT OF NOTHING CHOSEN
         }
