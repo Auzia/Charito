@@ -3,14 +3,14 @@
 //  Triviz
 //
 //  Created by Lakshman Krishnaiyer on 12/3/17.
-//  Copyright © 2017 Purple Potatoes. All rights reserved.
+//  Copyright © 2017 Auzia. All rights reserved.
 //
 
 import UIKit
 import iosMath
 
 class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    var topic: Topic = Topic()
+    var topic1: Topic = Topic()
     
     @IBOutlet weak var topicLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -28,7 +28,7 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     var correctAnswers: Int = 0
     var total: Int = 10
     var question: Question = Question(question: "", arrayOfAnswers: [],  correctAnswer: 0)
-    
+    var pool = QuestionPool().fifthSixthQuestionPool //placeholder
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
@@ -51,24 +51,21 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         answerPickerData = ["A", "B", "C", "D"]
         
         // Do any additional setup after loading the view.
-        topicLabel.text = topic.name
+        topicLabel.text = topic1.name
         scoreLabel.text = "\(correctAnswers) / \(answeredQs.count)"
         
         // Pick a question
-        var questionIndex =  Int(arc4random_uniform(UInt32(topic.questionPool.count)))
+        var questionIndex =  Int(arc4random_uniform(UInt32(topic1.questionPool.count)))
         
         
         //Make sure the question is new
         while (answeredQs.contains(questionIndex)) {
             //Look for a new question
-            questionIndex = Int(arc4random_uniform(UInt32(topic.questionPool.count)))
+            questionIndex = Int(arc4random_uniform(UInt32(topic1.questionPool.count)))
         }
         
         // To test a specific question, uncomment the following line
-        questionIndex = 0  // Fill in the index of the question you want to test
-        
-        let pools = QuestionPool()
-        let pool = pools.seventhEighthQuestionPool
+        questionIndex = 12  // Fill in the index of the question you want to test
         
         //Make sure you track all asked questions
         answeredQs.append(questionIndex)

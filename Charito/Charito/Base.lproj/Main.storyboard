@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,10 +21,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Gg7-3R-hAU">
-                                <rect key="frame" x="10" y="0.0" width="389" height="736"/>
+                                <rect key="frame" x="10" y="0.0" width="394" height="736"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVX-CI-DwL">
-                                        <rect key="frame" x="0.0" y="0.0" width="389" height="69"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="69"/>
                                         <color key="backgroundColor" red="0.12030844261634137" green="0.29843672089694079" blue="0.5632267405693242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="69" id="lKl-0f-Jqs"/>
@@ -32,7 +34,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solve math problems to solve world problems" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHF-R3-5Dh">
-                                        <rect key="frame" x="0.0" y="83" width="389" height="100"/>
+                                        <rect key="frame" x="0.0" y="83" width="394" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="8yi-Vd-jcd"/>
                                         </constraints>
@@ -41,13 +43,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xst-es-vSE">
-                                        <rect key="frame" x="0.0" y="197" width="389" height="27.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="197" width="394" height="27.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bsc-Ap-zfv">
-                                        <rect key="frame" x="0.0" y="238.66666666666666" width="389" height="29.999999999999972"/>
+                                        <rect key="frame" x="0.0" y="238.66666666666666" width="394" height="29.999999999999972"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="InQ-fo-t6o"/>
                                         </constraints>
@@ -56,7 +58,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your charity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIE-dR-deL">
-                                        <rect key="frame" x="0.0" y="282.66666666666669" width="389" height="50"/>
+                                        <rect key="frame" x="0.0" y="282.66666666666669" width="394" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="IOt-u9-XfA"/>
                                         </constraints>
@@ -65,7 +67,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nyr-IG-Fdf">
-                                        <rect key="frame" x="0.0" y="346.66666666666669" width="389" height="100"/>
+                                        <rect key="frame" x="0.0" y="346.66666666666669" width="394" height="100"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="1k3-cB-iZy"/>
@@ -76,7 +78,7 @@
                                         </connections>
                                     </pickerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your grade level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCB-af-xd1">
-                                        <rect key="frame" x="0.0" y="460.66666666666669" width="389" height="50"/>
+                                        <rect key="frame" x="0.0" y="460.66666666666669" width="394" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="csj-Vt-S4p"/>
                                         </constraints>
@@ -85,7 +87,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvc-ss-0NK">
-                                        <rect key="frame" x="0.0" y="524.66666666666663" width="389" height="100"/>
+                                        <rect key="frame" x="0.0" y="524.66666666666663" width="394" height="100"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" red="1" green="0.55355706339895105" blue="0.58731034349825373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -98,13 +100,14 @@
                                         </connections>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRm-CO-NzR">
-                                        <rect key="frame" x="0.0" y="638.66666666666663" width="389" height="97.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="638.66666666666663" width="394" height="97.333333333333371"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Continue">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="TpZ-R0-hWL" kind="show" id="dzy-tN-8BZ"/>
+                                            <action selector="Continue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W8J-3V-dJp"/>
+                                            <segue destination="TpZ-R0-hWL" kind="show" identifier="segue1" id="dzy-tN-8BZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -132,7 +135,7 @@
         <!--About Topic View Controller-->
         <scene sceneID="PrW-4m-Yr2">
             <objects>
-                <viewController id="TpZ-R0-hWL" userLabel="About Topic View Controller" sceneMemberID="viewController">
+                <viewController id="TpZ-R0-hWL" userLabel="About Topic View Controller" customClass="TopicViewController" customModule="Charito" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j0v-Dg-b8M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,20 +166,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic examples" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGd-MS-X2e">
-                                <rect key="frame" x="20" y="259" width="166" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Topic examples" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGd-MS-X2e">
+                                <rect key="frame" x="20" y="259" width="374" height="369"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8l-hl-SwX">
-                                <rect key="frame" x="172.66666666666666" y="651" width="69" height="41"/>
+                                <rect key="frame" x="178.66666666666666" y="651" width="57" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Start!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gdT-0V-pVa" kind="show" id="pyL-B7-2Jj"/>
+                                    <action selector="Start:" destination="TpZ-R0-hWL" eventType="touchUpInside" id="AIf-6p-ASC"/>
+                                    <segue destination="gdT-0V-pVa" kind="show" identifier="segue2" id="pyL-B7-2Jj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -198,6 +202,11 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="topicDescription" destination="sak-PT-ObI" id="zK0-eE-zsV"/>
+                        <outlet property="topicExamples" destination="FGd-MS-X2e" id="h1l-Tv-9ji"/>
+                        <outlet property="topicName" destination="WGL-TC-IfU" id="tiW-dj-ckk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hye-it-sft" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -22,6 +22,8 @@
 		2874DE85210BFC7200CD8D25 /* CharitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874DE84210BFC7200CD8D25 /* CharitoTests.swift */; };
 		2874DE90210BFC7200CD8D25 /* CharitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874DE8F210BFC7200CD8D25 /* CharitoUITests.swift */; };
 		32FAE2AA7A13678E4C67E280 /* Pods_Charito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C046AEA67ED177FB539B003 /* Pods_Charito.framework */; };
+		602F0F57214F08E3009EB7F9 /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F0F56214F08E3009EB7F9 /* TopicViewController.swift */; };
+		8377E28921569317007C659E /* Charity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8377E28821569317007C659E /* Charity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +67,9 @@
 		2874DE8F210BFC7200CD8D25 /* CharitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitoUITests.swift; sourceTree = "<group>"; };
 		2874DE91210BFC7200CD8D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F879649A256DD53867F21F9 /* Pods-Charito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charito.release.xcconfig"; path = "Pods/Target Support Files/Pods-Charito/Pods-Charito.release.xcconfig"; sourceTree = "<group>"; };
+		602F0F56214F08E3009EB7F9 /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		7F202B95B0212BD776B1C0A4 /* Pods-Charito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charito.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Charito/Pods-Charito.debug.xcconfig"; sourceTree = "<group>"; };
+		8377E28821569317007C659E /* Charity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,12 +130,14 @@
 				2874DE71210BFC7200CD8D25 /* ViewController.swift */,
 				2874DE76210BFC7200CD8D25 /* Assets.xcassets */,
 				2874DE73210BFC7200CD8D25 /* Main.storyboard */,
+				602F0F56214F08E3009EB7F9 /* TopicViewController.swift */,
 				2874DE78210BFC7200CD8D25 /* LaunchScreen.storyboard */,
 				2874DE7B210BFC7200CD8D25 /* Info.plist */,
 				28167AAB212E366100EE65FE /* QuestionPool.swift */,
 				2804532521444E6B009E4AB7 /* Question.swift */,
 				28167AAF212E3B3C00EE65FE /* Topic.swift */,
 				28028288212F7EE600D588D0 /* Game.swift */,
+				8377E28821569317007C659E /* Charity.swift */,
 			);
 			path = Charito;
 			sourceTree = "<group>";
@@ -350,12 +356,14 @@
 			files = (
 				28167AB0212E3B3C00EE65FE /* Topic.swift in Sources */,
 				28028289212F7EE600D588D0 /* Game.swift in Sources */,
+				8377E28921569317007C659E /* Charity.swift in Sources */,
 				2874DE72210BFC7200CD8D25 /* ViewController.swift in Sources */,
 				2804532621444E6B009E4AB7 /* Question.swift in Sources */,
 				28167AAC212E366100EE65FE /* QuestionPool.swift in Sources */,
 				2874DE70210BFC7200CD8D25 /* AppDelegate.swift in Sources */,
 				2804532A21445248009E4AB7 /* QuestionViewController.swift in Sources */,
 				280453282144523B009E4AB7 /* CongratsViewController.swift in Sources */,
+				602F0F57214F08E3009EB7F9 /* TopicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,12 +538,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B3W9NFUV5N;
+				DEVELOPMENT_TEAM = 254QE97473;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Charito/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Auzia.Charito-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "Auzia.Charito-22";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -551,12 +559,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B3W9NFUV5N;
+				DEVELOPMENT_TEAM = 254QE97473;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Charito/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Auzia.Charito-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "Auzia.Charito-22";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
