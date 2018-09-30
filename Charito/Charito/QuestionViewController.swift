@@ -33,7 +33,7 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     var total: Int = 10
 
     var question: Question = Question(question: "", arrayOfAnswers: [],  correctAnswer: 0)
-    var pool = QuestionPool().fifthSixthQuestionPool //placeholder
+    var pool = QuestionPool().seventhEighthQuestionPool //placeholder
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,8 +52,8 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             return
         }
         //setting up the picker view
-        self.answerPicker.delegate = self as? UIPickerViewDelegate
-        self.answerPicker.dataSource = self as? UIPickerViewDataSource
+        self.answerPicker.delegate = self as UIPickerViewDelegate
+        self.answerPicker.dataSource = self as UIPickerViewDataSource
         answerPickerData = ["A", "B", "C", "D"]
         
         // Do any additional setup after loading the view.
@@ -72,7 +72,7 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
         
         // To test a specific question, uncomment the following line
-        questionIndex = 12  // Fill in the index of the question you want to test
+        questionIndex = 0 // Fill in the index of the question you want to test
 
         //Make sure you track all asked questions
         answeredQs.append(questionIndex)

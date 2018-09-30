@@ -41,13 +41,25 @@ class QuestionPool{
     ]
     
     public let seventhEighthQuestionPool = [
-        Question(question: "HI", arrayOfAnswers: ["5","5","7","5"], correctAnswer: 0),
-        Question(question: "What\\ is\\ the\\ area\\ of\\ a\\ triangle\\ with\\ a\\ hight\\ of\\ 6cm\\ and\\ a\\ width\\ of\\ 3\\ cm.", arrayOfAnswers: ["18 cm^2","24 cm^2","14 cm^2","19 cm^2"], correctAnswer: 0),
-        Question(question: "The side of a square is 8 cm long. What is it's perimeter", arrayOfAnswers: ["14 cm","18 cm","11 cm","12 cm"], correctAnswer: 3),
-        Question(question: "Solve for x. ax + 3x = bx + 5.", arrayOfAnswers: ["3\\frac(a + 5 - b)","5\\frac(b + 3 - a","5\\frac(a + 3 - b)","3\\frac(b + 5 + a)"], correctAnswer: 2),
-        Question(question: "Solve 10x^2 = 6 + 9x", arrayOfAnswers: ["\\frac{5\\pm\\sqrt{65}}{-2}","\\frac{9\\pm\\sqrt{321}}{20}","\\frac{4\\pm\\sqrt{26}}{10}","\\frac{-1\\pm\\sqrt{109}}{18}"], correctAnswer: 1),
-    
-
+        Question(question: "What\\ is\\ the\\ area\\ of\\ a\\ triangle\\ with\\ a\\\\ hight\\ of\\ 6cm\\ and\\ a\\ width\\ of\\ 3\\ cm\\.", arrayOfAnswers: ["18 cm^2","24 cm^2","14 cm^2","19 cm^2"], correctAnswer: 0),
+        Question(question: "The\\ side\\ of\\ a\\ square\\ are\\ 8 cm\\ long.\\ What\\ is\\ it's\\ perimeter.", arrayOfAnswers: ["14\\ cm","18\\ cm","11\\ cm","12\\ cm"], correctAnswer: 3),
+        Question(question: "Solve\\ for\\ x.\\ ax+3x=bx+5.", arrayOfAnswers: ["3\\frac(a+5-b)","5\\frac(b+3-a","5\\frac(a+3-b)","3\\frac(b+5+a)"], correctAnswer: 2),
+        Question(question: "Solve\\ 10x^2=6+9x.", arrayOfAnswers: ["\\frac{5\\pm\\sqrt{65}}{-2}","\\frac{9\\pm\\sqrt{321}}{20}","\\frac{4\\pm\\sqrt{26}}{10}","\\frac{-1\\pm\\sqrt{109}}{18}"], correctAnswer: 1),
+        Question(question: "Solve\\ -8x+10-3x^2=-12x.", arrayOfAnswers: ["x=1,\\frac{1}{2}", "x=\\frac{-3\\pm\\sqrt{17}}{2}", "x=\\frac{-1\\pm\\sqrt{129}}{8}", "x=\\frac{-2\\pm\\sqrt{34}}{-3}"], correctAnswer: 3),
+        Question(question: "What\\ is\\ the\\ missing\\ constant\\ in\\ the\\ perfect\\ square\\ that\\ starts\\ with\\ x^{2}+10?", arrayOfAnswers: ["16", "25", "100", "225"], correctAnswer: 1),
+        Question(question: "What\\ is\\ the\\ missing\\ constant\\ in\\ the\\ perfect\\ square\\ that\\ starts\\ with\\ x^{2}-8x?", arrayOfAnswers: ["64", "25", "16", "4"], correctAnswer: 2),
+        Question(question: "Solve\\ for\\ x.\\ 4x^{2}=484", arrayOfAnswers: ["x=-12,12","x=-13,13", "x=-11,11", "x=-10,10"], correctAnswer: 3),
+        Question(question: "Solve\\ for\\ x.\\ -x^{2}-8=-33", arrayOfAnswers: ["x=-5,5", "x=-8,8", "x=-6,6", "x=-4,4"], correctAnswer: 0),
+        Question(question: "What\\ is\\ the\\ equation\\ of\\ the\\ line\\ through\\ (1,4)\\ and\\ (2,2)?", arrayOfAnswers: ["y=-x+10", "y=-2x+6", "y=2x+5", "y=3x+1"], correctAnswer: 1),
+        Question(question: "What\\ is\\ the\\ equation\\ of\\ the\\ line\\ through\\ (-6,-5)\\ and\\ (-4,-4)?", arrayOfAnswers: ["y=2x-2", "y=\\frac{1}{2}x+2", "y=\\frac{1}{2}x-2", "y=2x+2"], correctAnswer: 2),
+        Question(question: "What\\ is\\ 3100\\ in\\ scientific\\ notation?", arrayOfAnswers: ["3.1*10^{3}", "31*10^{2}", "3.1*10^{2}", "3.1*10^{4}"], correctAnswer: 1),
+        Question(question: "How\\ do\\ you\\ write\\ 7.25*10^{4}\\ in\\ standard\\ form?", arrayOfAnswers: ["7250", "725", "725000", "72500"], correctAnswer: 3),
+        Question(question: "Solve\\ for\\ r.\\ 3=\\frac{r+1}{2}.", arrayOfAnswers: ["5", "6", "3", "4"], correctAnswer: 0),
+        Question(question: "Solve\\ for\\ a.\\ \\frac{a}{2}+5\\leq4 " , arrayOfAnswers: ["a\\geg-18", "a\\geg-9", "a\\leq2", "a\\geg2"], correctAnswer: 3),
+        Question(question: "What\\ is\\ the\\ probability\\ of\\ fliping\\ heads\\ on\\ two\\ coin\\ flips?", arrayOfAnswers: ["\\frac{1}{4}", "\\frac{1}{2}", "\\frac{1}{8}", "\\frac{3}{8}"], correctAnswer: 0),
+        Question(question: "Find\\ the\\ area\\ of\\ a\\ circle\\ with\\ a\\ radius\\ of\\ 11.", arrayOfAnswers: ["22\\pi", "24\\pi", "144\\pi", "132\\pi"], correctAnswer: 3),
+        Question(question: "Find\\ the\\ area\\ of\\ a\\ circle\\ with\\ a\\ circumference\\ of\\ 18\\pi.", arrayOfAnswers: ["324\\pi", "18\\pi", "81\\pi", "100\\pi"], correctAnswer: 2),
+        Question(question: "Solve\\ for\\ k.\\frac{3}{11}=\\frac{6}{k}", arrayOfAnswers: ["33", "22", "11", "6"], correctAnswer: 1)
     ]
     
     public let ninthTenthQuestionPool = [
