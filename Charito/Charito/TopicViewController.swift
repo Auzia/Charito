@@ -13,12 +13,15 @@ class TopicViewController: UIViewController{
     @IBOutlet weak var topicName: UILabel!
     @IBOutlet weak var topicDescription: UILabel!
     @IBOutlet weak var topicExamples: UILabel!
+    @IBOutlet weak var charityName: UILabel!
+    @IBOutlet weak var charityDescription: UILabel!
+    
+    
     @IBAction func Start(_ sender: Any) {
         performSegue(withIdentifier: "segue2", sender: (Any).self)
     }
     var grade = ""
     var topic: Topic = Topic()
-    var charityName = ""
     var charity: Charity = Charity()
     var qPool = QuestionPool()
 
@@ -40,7 +43,8 @@ class TopicViewController: UIViewController{
         topicName.text = topic.name
         topicDescription.text = "Topics :" //CHANGE THIS LATER
         topicExamples.text = topic.description
-        
+        charityName.text = "You decided to donate to: " + charity.name
+        charityDescription.text = charity.description
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
