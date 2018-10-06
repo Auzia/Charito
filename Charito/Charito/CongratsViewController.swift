@@ -15,6 +15,7 @@ class CongratsViewController: UIViewController, MFMailComposeViewControllerDeleg
     var score: Int = 0
     
     @IBOutlet var scoreLabel: UILabel!
+
   
     @IBAction func sendEmail(_ sender: Any) {
         let mailComposeViewController = configureMailController()
