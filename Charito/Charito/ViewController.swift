@@ -69,7 +69,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         self.pickCharity.dataSource = self
         pickCharity.tag = 1
         pickGrade.tag = 2
-        pickCharityData = ["KID Museum","Capital Area Food Bank", "St. Jude's"]
+        pickCharityData = ["KID Museum","Capital Area Food Bank", "St. Jude's", "Outdoor Alliance", "Feeding America", "Challenger Center", "Endangered Species Coalition", "Animal Rescue Corps", "World Wildlife Fund"]
         self.pickGrade.delegate = self
         self.pickGrade.dataSource = self
 
