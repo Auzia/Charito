@@ -23,7 +23,7 @@ class QuestionPool{
         Question(question: "198-106", arrayOfAnswers: ["92","192","96","93"], correctAnswer: 0),
         Question(question: "135-70", arrayOfAnswers: ["75","65","60","70"], correctAnswer: 1),
         Question(question: "17\\times 2", arrayOfAnswers: ["34","32","42","44"], correctAnswer: 0),
-        Question(question: "What percent of 30 is 20?", arrayOfAnswers: ["66","33","20","30"], correctAnswer: 0),
+        Question(question: "What\\ percent\\ of\\ 30\\ is\\ 20?", arrayOfAnswers: ["66","33","20","30"], correctAnswer: 0),
         Question(question: "Out\\ of\\ 30\\ kids,\\\\ 50\\%\\ play\\ baseball.\\\\ How\\ many\\ kids\\ don't\\\\ play\\ baseball?", arrayOfAnswers: ["10","30","15","50"], correctAnswer: 2),
         Question(question: "1:7 = 2:?", arrayOfAnswers: ["15","8","14","6"], correctAnswer: 2),
         Question(question: "1:8 = ?:24", arrayOfAnswers: ["3","2","16","15"], correctAnswer: 0),
@@ -34,7 +34,7 @@ class QuestionPool{
         Question(question: "99-64=?", arrayOfAnswers: ["34","35","45","65"], correctAnswer: 1),
         Question(question: "66/3", arrayOfAnswers: ["2","22","33","23"], correctAnswer: 1),
         Question(question: "99-43=?", arrayOfAnswers: ["56","76","66","55"], correctAnswer: 0),
-        Question(question: "Which one is an obtuse angle?", arrayOfAnswers: ["181","18","90","80"], correctAnswer: 0),
+        Question(question: "Which\\ one\\ is\\ an\\ obtuse\\ angle?", arrayOfAnswers: ["181","18","90","80"], correctAnswer: 0),
         Question(question: "Which one is an acute angle?", arrayOfAnswers: ["32","222","90","180"], correctAnswer: 0),
         Question(question: "How many degrees are in a right angle?", arrayOfAnswers: ["180","90","45","60"], correctAnswer: 1)
         
@@ -55,7 +55,7 @@ class QuestionPool{
         Question(question: "What\\ is\\ 3100\\ in\\ scientific\\ notation?", arrayOfAnswers: ["3.1*10^{3}", "31*10^{2}", "3.1*10^{2}", "3.1*10^{4}"], correctAnswer: 1),
         Question(question: "How\\ do\\ you\\ write\\ 7.25*10^{4}\\ in\\ standard\\ form?", arrayOfAnswers: ["7250", "725", "725000", "72500"], correctAnswer: 3),
         Question(question: "Solve\\ for\\ r.\\ 3=\\frac{r+1}{2}.", arrayOfAnswers: ["5", "6", "3", "4"], correctAnswer: 0),
-        Question(question: "Solve\\ for\\ a.\\ \\frac{a}{2}+5\\leq4 " , arrayOfAnswers: ["a\\geg-18", "a\\geg-9", "a\\leq2", "a\\geg2"], correctAnswer: 3),
+        Question(question: "Solve\\ for\\ a.\\ \\frac{a}{2}+5\\leq4 " , arrayOfAnswers: ["a\\geq-18", "a\\geq-9", "a\\leq2", "a\\geq2"], correctAnswer: 3),
         Question(question: "What\\ is\\ the\\ probability\\ of\\ fliping\\ heads\\ on\\ two\\ coin\\ flips?", arrayOfAnswers: ["\\frac{1}{4}", "\\frac{1}{2}", "\\frac{1}{8}", "\\frac{3}{8}"], correctAnswer: 0),
         Question(question: "Find\\ the\\ area\\ of\\ a\\ circle\\ with\\ a\\ radius\\ of\\ 11.", arrayOfAnswers: ["22\\pi", "24\\pi", "144\\pi", "132\\pi"], correctAnswer: 3),
         Question(question: "Find\\ the\\ area\\ of\\ a\\ circle\\ with\\ a\\ circumference\\ of\\ 18\\pi.", arrayOfAnswers: ["324\\pi", "18\\pi", "81\\pi", "100\\pi"], correctAnswer: 2),
