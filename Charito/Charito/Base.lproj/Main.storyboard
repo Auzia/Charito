@@ -417,7 +417,7 @@
                                 <color key="textColor" red="0.97723575039999999" green="0.99328832199999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="You got x/10!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JC-Ik-mP7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You got x/10!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JC-Ik-mP7">
                                 <rect key="frame" x="114" y="253" width="186" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" red="0.97723575039999999" green="0.99328832199999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -447,6 +447,7 @@
                         <color key="backgroundColor" red="0.1529411765" green="0.36470588240000001" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qkX-zF-Ju2" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" constant="91" id="9uL-ER-zAr"/>
+                            <constraint firstItem="8JC-Ik-mP7" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" constant="114" id="DT0-Fc-kOq"/>
                             <constraint firstItem="qkX-zF-Ju2" firstAttribute="top" secondItem="h7u-0v-Q16" secondAttribute="bottom" constant="23" id="HYU-2I-5cX"/>
                             <constraint firstItem="h7u-0v-Q16" firstAttribute="trailing" secondItem="gdP-Uv-ZPo" secondAttribute="trailing" id="ITS-zE-TLq"/>
                             <constraint firstItem="gdP-Uv-ZPo" firstAttribute="trailing" secondItem="qkX-zF-Ju2" secondAttribute="trailing" constant="91" id="Iaf-6L-jUT"/>
@@ -461,6 +462,7 @@
                             <constraint firstItem="h7u-0v-Q16" firstAttribute="top" secondItem="yIb-na-uZb" secondAttribute="top" id="oC0-Jh-LDe"/>
                             <constraint firstItem="h7u-0v-Q16" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" id="tnN-zU-ul0"/>
                             <constraint firstItem="gdP-Uv-ZPo" firstAttribute="bottom" secondItem="wig-Ym-Nur" secondAttribute="bottom" constant="48" id="uMO-zk-Z0B"/>
+                            <constraint firstItem="8JC-Ik-mP7" firstAttribute="centerX" secondItem="qkX-zF-Ju2" secondAttribute="centerX" id="wjF-0L-kp7"/>
                             <constraint firstItem="wig-Ym-Nur" firstAttribute="top" secondItem="5WN-BY-XKA" secondAttribute="bottom" constant="30" id="zDW-U1-voZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gdP-Uv-ZPo"/>

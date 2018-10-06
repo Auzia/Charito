@@ -19,7 +19,7 @@ class QuestionPool{
         Question(question: "(63/7)-2", arrayOfAnswers: ["9","53","61","7"], correctAnswer: 3),
         Question(question: "3(2+3)", arrayOfAnswers: ["1","16","15","18"], correctAnswer: 2),
         Question(question: "12\\times 3 = c+6", arrayOfAnswers: ["30","20","24","6"], correctAnswer: 0),
-        Question(question: "154-33", arrayOfAnswers: ["123","124","125","23"], correctAnswer: 0),
+        Question(question: "154-33", arrayOfAnswers: ["121","124","125","23"], correctAnswer: 0),
         Question(question: "198-106", arrayOfAnswers: ["92","192","96","93"], correctAnswer: 0),
         Question(question: "135-70", arrayOfAnswers: ["75","65","60","70"], correctAnswer: 1),
         Question(question: "17\\times 2", arrayOfAnswers: ["34","32","42","44"], correctAnswer: 0),
@@ -34,9 +34,9 @@ class QuestionPool{
         Question(question: "99-64=?", arrayOfAnswers: ["34","35","45","65"], correctAnswer: 1),
         Question(question: "66/3", arrayOfAnswers: ["2","22","33","23"], correctAnswer: 1),
         Question(question: "99-43=?", arrayOfAnswers: ["56","76","66","55"], correctAnswer: 0),
-        Question(question: "Which one is an obtuse angle?", arrayOfAnswers: ["181","18","90","80"], correctAnswer: 0),
-        Question(question: "Which one is an acute angle?", arrayOfAnswers: ["32","222","90","180"], correctAnswer: 0),
-        Question(question: "How many degrees are in a right angle?", arrayOfAnswers: ["180","90","45","60"], correctAnswer: 1)
+        Question(question: "Which\\one\\is\\an\\obtuse\\angle?", arrayOfAnswers: ["181","18","90","80"], correctAnswer: 0),
+        Question(question: "Which\\one\\is\\an\\acute\\angle?", arrayOfAnswers: ["32","222","90","180"], correctAnswer: 0),
+        Question(question: "How\\many\\degrees\\are\\in\\a\\right\\angle?", arrayOfAnswers: ["180","90","45","60"], correctAnswer: 1)
         
     ]
     
