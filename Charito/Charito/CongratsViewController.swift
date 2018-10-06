@@ -13,7 +13,6 @@ class CongratsViewController: UIViewController {
     var score: Int = 0
     
     @IBOutlet var scoreLabel: UILabel!
-  
    
     
     @IBAction func backToHome(_ sender: Any) {

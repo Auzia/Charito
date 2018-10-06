@@ -101,20 +101,24 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let indexSelected = answerPicker.selectedRow(inComponent: 0)
         let okayAction = UIAlertAction(title: "Okay", style: .default) {
             (action) in
-            self.showNewQuestion()
         }
         
         if(question.correctAnswer == indexSelected) {
             // Correct - Show box
             let alert = UIAlertController(title: "Correct Answer :-D", message: "Way to go!", preferredStyle: .alert)
-            alert.addAction(okayAction)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { action in
+                self.showNewQuestion()
+            }))
             self.present(alert, animated: true, completion: nil)
             correctAnswers = correctAnswers + 1
+        
         }
         else {
             // Incorrect Answer - Show Box
             let alert = UIAlertController(title: "Incorrect Answer", message: "Better luck next time", preferredStyle: .alert)
-            alert.addAction(okayAction)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { action in
+                self.showNewQuestion()
+            }))
             self.present(alert, animated: true, completion: nil)
         }
     }
@@ -132,7 +136,6 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     @IBAction func submitAnswer(_ sender: Any) {
         checkAnswer()
-        showNewQuestion()
     }
     
     
