@@ -457,10 +457,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WN-BY-XKA">
+                                <rect key="frame" x="30" y="536" width="354" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Send Email to Sponsor">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendEmail:" destination="aBQ-rY-pWJ" eventType="touchUpInside" id="loB-Iz-fdZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1529411765" green="0.36470588240000001" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qkX-zF-Ju2" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" constant="91" id="9uL-ER-zAr"/>
+                            <constraint firstItem="8JC-Ik-mP7" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" constant="114" id="DT0-Fc-kOq"/>
                             <constraint firstItem="qkX-zF-Ju2" firstAttribute="top" secondItem="h7u-0v-Q16" secondAttribute="bottom" constant="23" id="HYU-2I-5cX"/>
                             <constraint firstItem="h7u-0v-Q16" firstAttribute="trailing" secondItem="gdP-Uv-ZPo" secondAttribute="trailing" id="ITS-zE-TLq"/>
                             <constraint firstItem="gdP-Uv-ZPo" firstAttribute="trailing" secondItem="qkX-zF-Ju2" secondAttribute="trailing" constant="91" id="Iaf-6L-jUT"/>
@@ -469,12 +480,16 @@
                             <constraint firstItem="0Bc-UN-bR7" firstAttribute="centerY" secondItem="b1m-hK-NAO" secondAttribute="centerY" id="KO1-TE-RXf"/>
                             <constraint firstItem="0Bc-UN-bR7" firstAttribute="leading" secondItem="qkX-zF-Ju2" secondAttribute="leading" id="PX5-cM-Z2o"/>
                             <constraint firstItem="gdP-Uv-ZPo" firstAttribute="bottom" secondItem="qkX-zF-Ju2" secondAttribute="bottom" constant="580" id="VRc-47-OZ1"/>
+                            <constraint firstItem="5WN-BY-XKA" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" constant="30" id="bZv-aZ-KaU"/>
                             <constraint firstItem="wig-Ym-Nur" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" id="ena-wf-ATE"/>
                             <constraint firstItem="0Bc-UN-bR7" firstAttribute="top" secondItem="yIb-na-uZb" secondAttribute="top" constant="265" id="fZR-JR-mNv"/>
                             <constraint firstItem="gdP-Uv-ZPo" firstAttribute="bottom" secondItem="h7u-0v-Q16" secondAttribute="bottom" constant="663" id="jKp-3f-0vQ"/>
+                            <constraint firstItem="gdP-Uv-ZPo" firstAttribute="trailing" secondItem="5WN-BY-XKA" secondAttribute="trailing" constant="30" id="msf-kg-a9N"/>
                             <constraint firstItem="h7u-0v-Q16" firstAttribute="top" secondItem="yIb-na-uZb" secondAttribute="top" id="oC0-Jh-LDe"/>
                             <constraint firstItem="h7u-0v-Q16" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" id="tnN-zU-ul0"/>
                             <constraint firstItem="gdP-Uv-ZPo" firstAttribute="bottom" secondItem="wig-Ym-Nur" secondAttribute="bottom" constant="48" id="uMO-zk-Z0B"/>
+                            <constraint firstItem="8JC-Ik-mP7" firstAttribute="centerX" secondItem="qkX-zF-Ju2" secondAttribute="centerX" id="wjF-0L-kp7"/>
+                            <constraint firstItem="wig-Ym-Nur" firstAttribute="top" secondItem="5WN-BY-XKA" secondAttribute="bottom" constant="30" id="zDW-U1-voZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gdP-Uv-ZPo"/>
                     </view>
@@ -486,7 +501,8 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jey-Xm-9eW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="aBQ-rY-pWJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2019" y="786"/>
+            <point key="canvasLocation" x="2018.840579710145" y="785.86956521739137"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
