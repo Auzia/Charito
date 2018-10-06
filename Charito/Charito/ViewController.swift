@@ -37,6 +37,15 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             } else {
                 topicController.grade = "fifthSixth"
             }
+            
+            if charitySelected == "St. Jude's"{
+                topicController.charity = CharityPool().stJudes
+                
+            } else if charitySelected == "Capital Area Food Bank"{
+                topicController.charity = CharityPool().Cap
+            } else {
+                topicController.charity = CharityPool().KID
+            }
             //REPLACE LAST WITH ACTUAL 11TH 12TH CLASS AND ADD ELSE ALERT OF NOTHING CHOSEN
         }
     }
@@ -60,7 +69,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         self.pickCharity.dataSource = self
         pickCharity.tag = 1
         pickGrade.tag = 2
-        pickCharityData = ["St. Judes", "Capital Area Food Bank"]
+        pickCharityData = ["KID Museum","Capital Area Food Bank", "St. Jude's"]
         self.pickGrade.delegate = self
         self.pickGrade.dataSource = self
 
