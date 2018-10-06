@@ -24,6 +24,8 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var answerChoice3: MTMathUILabel!
     @IBOutlet weak var answerChoice4: MTMathUILabel!
     @IBOutlet weak var answerPicker: UIPickerView!
+    @IBOutlet weak var submiitAnswer: UIButton!
+    
     
     var answerPickerData: [String] = [String]()
     
@@ -34,6 +36,7 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
     var question: Question = Question(question: "", arrayOfAnswers: [],  correctAnswer: 0)
     var pool = QuestionPool().seventhEighthQuestionPool //placeholder
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +75,7 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
         
         // To test a specific question, uncomment the following line
-        questionIndex = 0 // Fill in the index of the question you want to test
+        //questionIndex = 0 // Fill in the index of the question you want to test
 
         //Make sure you track all asked questions
         answeredQs.append(questionIndex)
@@ -94,13 +97,14 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     
-    func checkAnswer(answerClicked: String) {
-        let correctAnswerString = question.arrayOfAnswers[question.correctAnswer]
+    func checkAnswer() {
+        let indexSelected = answerPicker.selectedRow(inComponent: 0)
         let okayAction = UIAlertAction(title: "Okay", style: .default) {
             (action) in
             self.showNewQuestion()
         }
-        if(correctAnswerString == answerClicked) {
+        
+        if(question.correctAnswer == indexSelected) {
             // Correct - Show box
             let alert = UIAlertController(title: "Correct Answer :-D", message: "Way to go!", preferredStyle: .alert)
             alert.addAction(okayAction)
@@ -123,9 +127,12 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         return answerPickerData.count
     }
     
-    
     internal func pickerView(_ pickerView:UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return answerPickerData[row]
+    }
+    @IBAction func submitAnswer(_ sender: Any) {
+        checkAnswer()
+        showNewQuestion()
     }
     
     
