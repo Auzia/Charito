@@ -25,6 +25,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
         
     }
+    var sponsor: Sponsor = Sponsor(email: "", name: "", amountDonated: "")
+    @IBAction func AddSponsor(_ sender: Any) {
+            performSegue(withIdentifier: "sponsorSegue", sender: (Any).self)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue1" {
             var topicController = segue.destination as! TopicViewController
@@ -47,18 +51,19 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 topicController.charity = CharityPool().KID
             }
             //REPLACE LAST WITH ACTUAL 11TH 12TH CLASS AND ADD ELSE ALERT OF NOTHING CHOSEN
+            topicController.sponsor = sponsor
         }
     }
     var pickCharityData: [String] = [String]()
     var pickGradeData: [String] = [String]()
 
+    
     let darkGreen = UIColor(red:0.16, green:0.50, blue:0.38, alpha:1.0)
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let pools = QuestionPool()
-        
         let fifthSixthTopic = Topic(name: "5th/6th grade math", description: "Hey", questionPool: pools.fifthSixthQuestionPool)
         let seventhEighthTopic = Topic(name: "7th/8th grade math", description: "Hola", questionPool: pools.seventhEighthQuestionPool)
         let ninthTenthTopic = Topic(name: "9th/10th grade math", description: "Hi", questionPool: pools.ninthTenthQuestionPool)

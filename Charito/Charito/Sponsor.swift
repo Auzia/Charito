@@ -12,9 +12,9 @@ import os.log
 class Sponsor {
     let email: String
     let name: String
-    let amountDonated: Float
+    let amountDonated: String
     
-    init(email: String = "", name: String = "", amountDonated: Float) {
+    init(email: String = "", name: String = "", amountDonated: String = "") {
         self.email = email
         self.name = name
         self.amountDonated = amountDonated

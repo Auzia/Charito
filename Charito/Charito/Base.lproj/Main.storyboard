@@ -37,11 +37,11 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="8yi-Vd-jcd"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xst-es-vSE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xst-es-vSE">
                                         <rect key="frame" x="0.0" y="197" width="389" height="27.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,8 +98,21 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="HBy-h4-hbp"/>
                                         </connections>
                                     </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxz-Te-cx0">
+                                        <rect key="frame" x="0.0" y="638.66666666666663" width="389" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="9c0-YJ-pFu"/>
+                                        </constraints>
+                                        <state key="normal" title="Click to Add A Sponsor">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AddSponsor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o07-lU-pkR"/>
+                                            <segue destination="BpY-pp-lzQ" kind="show" identifier="sponsorSegue" id="uej-7y-o27"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRm-CO-NzR">
-                                        <rect key="frame" x="0.0" y="638.66666666666663" width="389" height="97.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="694.66666666666663" width="389" height="41.333333333333371"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Continue">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -130,6 +143,118 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750.72463768115949" y="-60.326086956521742"/>
+        </scene>
+        <!--Sponsor View Controller-->
+        <scene sceneID="dTp-b7-XD0">
+            <objects>
+                <viewController id="BpY-pp-lzQ" customClass="SponsorViewController" customModule="Charito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Ke-Kd-VLq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6c-MV-ZbY">
+                                <rect key="frame" x="5" y="0.0" width="409" height="69"/>
+                                <color key="backgroundColor" red="0.1203084426" green="0.29843672090000001" blue="0.5632267406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a sponsor here. We need these to help the charities!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4i-Nt-iTY">
+                                <rect key="frame" x="20" y="77" width="374" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your sponsor's name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nu-3J-m6z">
+                                <rect key="frame" x="20" y="358" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much will they pay per question?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z61-Yf-HbP">
+                                <rect key="frame" x="20" y="519" width="289" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qp4-R7-FBo">
+                                <rect key="frame" x="317" y="514" width="77" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mKr-JQ-ksX">
+                                <rect key="frame" x="20" y="387" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="8a6-Gw-GyQ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2cl-Zd-Uhr">
+                                <rect key="frame" x="20" y="259" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="lWU-j8-e61"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwZ-rM-eiC">
+                                <rect key="frame" x="171" y="633" width="80" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="LoadSponsor:" destination="BpY-pp-lzQ" eventType="touchUpInside" id="LNQ-em-G4h"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="sponsorAdded" id="leq-mi-6Mf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your sponsor's email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sf2-Rm-XMa">
+                                <rect key="frame" x="20" y="230" width="207" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1529411765" green="0.36470588240000001" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="z61-Yf-HbP" firstAttribute="centerY" secondItem="qp4-R7-FBo" secondAttribute="centerY" id="2mn-6K-71K"/>
+                            <constraint firstItem="6Nu-3J-m6z" firstAttribute="top" secondItem="2cl-Zd-Uhr" secondAttribute="bottom" constant="69" id="4ZP-Px-I5X"/>
+                            <constraint firstItem="6Nu-3J-m6z" firstAttribute="leading" secondItem="z61-Yf-HbP" secondAttribute="leading" id="4dV-B1-hgX"/>
+                            <constraint firstItem="6Nu-3J-m6z" firstAttribute="leading" secondItem="2cl-Zd-Uhr" secondAttribute="leading" id="7UN-d0-QFm"/>
+                            <constraint firstItem="6Nu-3J-m6z" firstAttribute="centerY" secondItem="7Ke-Kd-VLq" secondAttribute="centerY" id="BvX-jg-Sj1"/>
+                            <constraint firstItem="v6c-MV-ZbY" firstAttribute="leading" secondItem="ZCD-pB-8vl" secondAttribute="leading" constant="5" id="CBu-N9-RO6"/>
+                            <constraint firstItem="N4i-Nt-iTY" firstAttribute="leading" secondItem="7Ke-Kd-VLq" secondAttribute="leadingMargin" id="E94-wm-1Qy"/>
+                            <constraint firstItem="N4i-Nt-iTY" firstAttribute="top" secondItem="v6c-MV-ZbY" secondAttribute="bottom" constant="8" symbolic="YES" id="M1f-YW-WXL"/>
+                            <constraint firstItem="MwZ-rM-eiC" firstAttribute="leading" secondItem="ZCD-pB-8vl" secondAttribute="leading" constant="171" id="OJS-Yv-DG0"/>
+                            <constraint firstItem="MwZ-rM-eiC" firstAttribute="top" secondItem="z61-Yf-HbP" secondAttribute="bottom" constant="93" id="Q6v-YF-ATI"/>
+                            <constraint firstItem="v6c-MV-ZbY" firstAttribute="top" secondItem="7Ke-Kd-VLq" secondAttribute="top" id="S91-2B-gcQ"/>
+                            <constraint firstAttribute="bottom" secondItem="z61-Yf-HbP" secondAttribute="bottom" constant="196" id="Teh-8Q-1rP"/>
+                            <constraint firstItem="N4i-Nt-iTY" firstAttribute="trailing" secondItem="7Ke-Kd-VLq" secondAttribute="trailingMargin" id="Wjd-J8-Yl6"/>
+                            <constraint firstAttribute="trailing" secondItem="v6c-MV-ZbY" secondAttribute="trailing" id="XwE-Uh-C1L"/>
+                            <constraint firstItem="sf2-Rm-XMa" firstAttribute="top" secondItem="N4i-Nt-iTY" secondAttribute="bottom" constant="63" id="YTn-Io-fQR"/>
+                            <constraint firstItem="mKr-JQ-ksX" firstAttribute="top" secondItem="6Nu-3J-m6z" secondAttribute="bottom" constant="8" symbolic="YES" id="dBF-0w-VKh"/>
+                            <constraint firstItem="ZCD-pB-8vl" firstAttribute="bottom" secondItem="N4i-Nt-iTY" secondAttribute="bottom" constant="569" id="h4n-fR-XAF"/>
+                            <constraint firstItem="6Nu-3J-m6z" firstAttribute="leading" secondItem="sf2-Rm-XMa" secondAttribute="leading" id="rjX-Lc-CUN"/>
+                            <constraint firstItem="sf2-Rm-XMa" firstAttribute="leading" secondItem="N4i-Nt-iTY" secondAttribute="leading" id="sot-vk-l8b"/>
+                            <constraint firstItem="qp4-R7-FBo" firstAttribute="leading" secondItem="z61-Yf-HbP" secondAttribute="trailing" constant="8" symbolic="YES" id="tfr-nH-yNr"/>
+                            <constraint firstItem="6Nu-3J-m6z" firstAttribute="leading" secondItem="mKr-JQ-ksX" secondAttribute="leading" id="wCM-yc-NGW"/>
+                            <constraint firstItem="ZCD-pB-8vl" firstAttribute="bottom" secondItem="v6c-MV-ZbY" secondAttribute="bottom" constant="667" id="y8H-CH-ZSq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZCD-pB-8vl"/>
+                    </view>
+                    <connections>
+                        <outlet property="SEmail" destination="2cl-Zd-Uhr" id="Wbf-jU-aR0"/>
+                        <outlet property="SMoney" destination="qp4-R7-FBo" id="teW-SI-iGV"/>
+                        <outlet property="SName" destination="mKr-JQ-ksX" id="WKf-5s-XXz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TM3-Ai-8Zb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528.985507246377" y="-60.326086956521742"/>
         </scene>
         <!--About Topic View Controller-->
         <scene sceneID="PrW-4m-Yr2">
@@ -402,4 +527,7 @@
             <point key="canvasLocation" x="2019" y="786"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="leq-mi-6Mf"/>
+    </inferredMetricsTieBreakers>
 </document>

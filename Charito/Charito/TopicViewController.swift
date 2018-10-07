@@ -24,8 +24,10 @@ class TopicViewController: UIViewController{
     var topic: Topic = Topic()
     var charity: Charity = Charity()
     var qPool = QuestionPool()
+    var sponsor: Sponsor = Sponsor(email: "", name: "", amountDonated: "")
 
     override func viewDidLoad() {
+        print(sponsor.name)
         if grade == "fifthSixth"{
             topic = Topic(name: "5th and 6th Grade", description: "You will see basic \n arithmetic on this section", questionPool: qPool.fifthSixthQuestionPool)
             
@@ -52,6 +54,7 @@ class TopicViewController: UIViewController{
             var questionController = segue.destination as! QuestionViewController
             questionController.topic1 = topic
             questionController.pool = topic.questionPool
+            questionController.sponsor = sponsor
         }
     }
 }

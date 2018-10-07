@@ -12,8 +12,8 @@ import iosMath
 
 class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var topic1: Topic = Topic()
-    
-    
+    var sponsor = Sponsor(email: "fill", name: "fill", amountDonated: "0")
+
     
     @IBOutlet weak var topicLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -34,7 +34,6 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
     var question: Question = Question(question: "", arrayOfAnswers: [],  correctAnswer: 0)
     var pool = QuestionPool().seventhEighthQuestionPool //placeholder
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)

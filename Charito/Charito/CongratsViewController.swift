@@ -9,7 +9,7 @@
 import UIKit
 
 class CongratsViewController: UIViewController {
-    
+    var sponsor = Sponsor(email: "fill", name: "fill", amountDonated: "0")
     var score: Int = 0
     
     @IBOutlet var scoreLabel: UILabel!
