@@ -134,11 +134,8 @@
 				608193612166DFA0001D52B6 /* SponsorViewController.swift */,
 				280453272144523B009E4AB7 /* CongratsViewController.swift */,
 				2874DE71210BFC7200CD8D25 /* ViewController.swift */,
-<<<<<<< HEAD
 				8377E28821569317007C659E /* Charity.swift */,
-=======
 				602F0F56214F08E3009EB7F9 /* TopicViewController.swift */,
->>>>>>> a952231b6342e676ba6c996e76e9131b99339494
 				602F0F5821569582009EB7F9 /* CharityPool.swift */,
 				2874DE6F210BFC7200CD8D25 /* AppDelegate.swift */,
 				2874DE76210BFC7200CD8D25 /* Assets.xcassets */,

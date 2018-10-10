@@ -42,21 +42,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 topicController.grade = "fifthSixth"
             }
             
-<<<<<<< HEAD
             topicController.charity = CharityPool().pool[charitySelected]
-            
-=======
-            if charitySelected == "St. Jude's"{
-                topicController.charity = CharityPool().stJudes
-                
-            } else if charitySelected == "Capital Area Food Bank"{
-                topicController.charity = CharityPool().Cap
-            } else {
-                topicController.charity = CharityPool().KID
-            }
-            //REPLACE LAST WITH ACTUAL 11TH 12TH CLASS AND ADD ELSE ALERT OF NOTHING CHOSEN
-            topicController.sponsor = sponsor
->>>>>>> a952231b6342e676ba6c996e76e9131b99339494
         }
     }
     var pickCharityData: [String] = [String]()
