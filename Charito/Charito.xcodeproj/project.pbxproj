@@ -25,6 +25,7 @@
 		602F0F57214F08E3009EB7F9 /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F0F56214F08E3009EB7F9 /* TopicViewController.swift */; };
 		602F0F5921569582009EB7F9 /* CharityPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F0F5821569582009EB7F9 /* CharityPool.swift */; };
 		6081935E216199F4001D52B6 /* Sponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6081935D216199F4001D52B6 /* Sponsor.swift */; };
+		608193622166DFA0001D52B6 /* SponsorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608193612166DFA0001D52B6 /* SponsorViewController.swift */; };
 		8377E28921569317007C659E /* Charity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8377E28821569317007C659E /* Charity.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		602F0F56214F08E3009EB7F9 /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		602F0F5821569582009EB7F9 /* CharityPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityPool.swift; sourceTree = "<group>"; };
 		6081935D216199F4001D52B6 /* Sponsor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sponsor.swift; sourceTree = "<group>"; };
+		608193612166DFA0001D52B6 /* SponsorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SponsorViewController.swift; path = /Users/kushanweerakoon/Documents/GitHub/Charito/Charito/Charito/SponsorViewController.swift; sourceTree = "<absolute>"; };
 		7F202B95B0212BD776B1C0A4 /* Pods-Charito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charito.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Charito/Pods-Charito.debug.xcconfig"; sourceTree = "<group>"; };
 		8377E28821569317007C659E /* Charity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,15 +131,19 @@
 			isa = PBXGroup;
 			children = (
 				280B28C321534D970017F1FC /* QuestionViewController.swift */,
+				608193612166DFA0001D52B6 /* SponsorViewController.swift */,
 				280453272144523B009E4AB7 /* CongratsViewController.swift */,
-				2874DE6F210BFC7200CD8D25 /* AppDelegate.swift */,
 				2874DE71210BFC7200CD8D25 /* ViewController.swift */,
+<<<<<<< HEAD
 				8377E28821569317007C659E /* Charity.swift */,
+=======
+				602F0F56214F08E3009EB7F9 /* TopicViewController.swift */,
+>>>>>>> a952231b6342e676ba6c996e76e9131b99339494
 				602F0F5821569582009EB7F9 /* CharityPool.swift */,
+				2874DE6F210BFC7200CD8D25 /* AppDelegate.swift */,
 				2874DE76210BFC7200CD8D25 /* Assets.xcassets */,
 				2874DE73210BFC7200CD8D25 /* Main.storyboard */,
 				6081935D216199F4001D52B6 /* Sponsor.swift */,
-				602F0F56214F08E3009EB7F9 /* TopicViewController.swift */,
 				2874DE78210BFC7200CD8D25 /* LaunchScreen.storyboard */,
 				2874DE7B210BFC7200CD8D25 /* Info.plist */,
 				28167AAB212E366100EE65FE /* QuestionPool.swift */,
@@ -368,6 +374,7 @@
 				2874DE72210BFC7200CD8D25 /* ViewController.swift in Sources */,
 				2804532621444E6B009E4AB7 /* Question.swift in Sources */,
 				28167AAC212E366100EE65FE /* QuestionPool.swift in Sources */,
+				608193622166DFA0001D52B6 /* SponsorViewController.swift in Sources */,
 				2874DE70210BFC7200CD8D25 /* AppDelegate.swift in Sources */,
 				280B28C421534D970017F1FC /* QuestionViewController.swift in Sources */,
 				280453282144523B009E4AB7 /* CongratsViewController.swift in Sources */,

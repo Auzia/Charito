@@ -12,9 +12,9 @@ import Foundation
 class Sponsor {
     let email: String
     let name: String
-    let amountDonated: Float
+    let amountDonated: String
     
-    init(email: String = "", name: String = "", amountDonated: Float) {
+    init(email: String = "", name: String = "", amountDonated: String = "") {
         self.email = email
         self.name = name
         self.amountDonated = amountDonated
@@ -48,7 +48,7 @@ class Sponsor {
         }
         
         // Because photo is an optional property of Destination, just use conditional cast.
-        guard let amountDonated = (aDecoder.decodeObject(forKey: PropertyKey.amountDonated) as? Float) else {
+        guard let amountDonated = (aDecoder.decodeObject(forKey: PropertyKey.amountDonated) as? String) else {
             print("Unable to decode the amount donated for a Destination object.")
             return nil
         }

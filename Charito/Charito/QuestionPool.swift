@@ -22,6 +22,10 @@ class QuestionPool{
         Question(question: "154-33", arrayOfAnswers: ["121","124","125","23"], correctAnswer: 0),
         Question(question: "198-106", arrayOfAnswers: ["92","192","96","93"], correctAnswer: 0),
         Question(question: "135-70", arrayOfAnswers: ["75","65","60","70"], correctAnswer: 1),
+<<<<<<< HEAD
+=======
+
+>>>>>>> a952231b6342e676ba6c996e76e9131b99339494
         Question(question: "17\\ times\\ 2", arrayOfAnswers: ["34","32","42","44"], correctAnswer: 0),
         Question(question: "What\\ percent\\ of\\ 30\\ is\\ 20?", arrayOfAnswers: ["66","33","20","30"], correctAnswer: 0),
         Question(question: "Out\\ of\\ 30\\ kids,\\\\ 50\\%\\ play\\ baseball.\\\\ How\\ many\\ kids\\ don\\'t\\\\ play\\ baseball?", arrayOfAnswers: ["10","30","15","50"], correctAnswer: 2),

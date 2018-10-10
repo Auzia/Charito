@@ -25,6 +25,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
         
     }
+    var sponsor: Sponsor = Sponsor(email: "", name: "", amountDonated: "")
+    @IBAction func AddSponsor(_ sender: Any) {
+            performSegue(withIdentifier: "sponsorSegue", sender: (Any).self)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue1" {
             var topicController = segue.destination as! TopicViewController
@@ -38,13 +42,27 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 topicController.grade = "fifthSixth"
             }
             
+<<<<<<< HEAD
             topicController.charity = CharityPool().pool[charitySelected]
             
+=======
+            if charitySelected == "St. Jude's"{
+                topicController.charity = CharityPool().stJudes
+                
+            } else if charitySelected == "Capital Area Food Bank"{
+                topicController.charity = CharityPool().Cap
+            } else {
+                topicController.charity = CharityPool().KID
+            }
+            //REPLACE LAST WITH ACTUAL 11TH 12TH CLASS AND ADD ELSE ALERT OF NOTHING CHOSEN
+            topicController.sponsor = sponsor
+>>>>>>> a952231b6342e676ba6c996e76e9131b99339494
         }
     }
     var pickCharityData: [String] = [String]()
     var pickGradeData: [String] = [String]()
 
+    
     let darkGreen = UIColor(red:0.16, green:0.50, blue:0.38, alpha:1.0)
 
     
