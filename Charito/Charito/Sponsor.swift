@@ -48,7 +48,7 @@ class Sponsor {
         }
         
         // Because photo is an optional property of Destination, just use conditional cast.
-        guard let amountDonated = (aDecoder.decodeObject(forKey: PropertyKey.amountDonated) as? Float) else {
+        guard let amountDonated = (aDecoder.decodeObject(forKey: PropertyKey.amountDonated) as? String) else {
             print("Unable to decode the amount donated for a Destination object.")
             return nil
         }

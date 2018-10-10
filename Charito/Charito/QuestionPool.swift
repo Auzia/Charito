@@ -22,17 +22,7 @@ class QuestionPool{
         Question(question: "154-33", arrayOfAnswers: ["121","124","125","23"], correctAnswer: 0),
         Question(question: "198-106", arrayOfAnswers: ["92","192","96","93"], correctAnswer: 0),
         Question(question: "135-70", arrayOfAnswers: ["75","65","60","70"], correctAnswer: 1),
-<<<<<<< HEAD
-        Question(question: "17\\times 2", arrayOfAnswers: ["34","32","42","44"], correctAnswer: 0),
-        Question(question: "What\\percent\\of\\30\\is\\20?", arrayOfAnswers: ["66","33","20","30"], correctAnswer: 0),
-        Question(question: "Out\\ of\\ 30\\ kids,\\\\ 50\\%\\ play\\ baseball.\\\\ How\\ many\\ kids\\ don't\\\\ play\\ baseball?", arrayOfAnswers: ["10","30","15","50"], correctAnswer: 2),
-        Question(question: "1:7 = 2:?", arrayOfAnswers: ["15","8","14","6"], correctAnswer: 2),
-        Question(question: "1:8 = ?:24", arrayOfAnswers: ["3","2","16","15"], correctAnswer: 0),
-        Question(question: "3:54 = ?:18", arrayOfAnswers: ["1","2","3","4"], correctAnswer: 0),
-        Question(question: "What's\\ the\\ volume\\ of\\ a\\ cube\\ with\\ sides\\ that\\ are\\ 3\\ units long?", arrayOfAnswers: ["27","9","12","6"], correctAnswer: 0),
-        Question(question: "What's\\ the\\ volume\\ of\\ a\\ cube\\ with\\ sides\\ that\\ are\\ 5\\ units\\ long?", arrayOfAnswers: ["120","125","12","25"], correctAnswer: 1),
-        Question(question: "What's\\ the\\ volume\\ of\\ a\\ cube\\ with\\ sides\\ that\\ are\\ 10\\ units\\ long?", arrayOfAnswers: ["100","1000","10","10000"], correctAnswer: 1),
-=======
+
         Question(question: "17\\ times\\ 2", arrayOfAnswers: ["34","32","42","44"], correctAnswer: 0),
         Question(question: "What\\ percent\\ of\\ 30\\ is\\ 20?", arrayOfAnswers: ["66","33","20","30"], correctAnswer: 0),
         Question(question: "Out\\ of\\ 30\\ kids,\\\\ 50\\%\\ play\\ baseball.\\\\ How\\ many\\ kids\\ don\\'t\\\\ play\\ baseball?", arrayOfAnswers: ["10","30","15","50"], correctAnswer: 2),
@@ -42,7 +32,6 @@ class QuestionPool{
         Question(question: "What's\\ the\\ volume\\ of\\ a\\ cube\\ with\\\\ sides\\ that\\ are\\ 3\\ units\\\\ long?", arrayOfAnswers: ["27","9","12","6"], correctAnswer: 0),
         Question(question: "What's\\ the\\ volume\\ of\\ a\\ cube\\ with\\\\ sides\\ that\\ are\\ 5\\ units\\\\ long?", arrayOfAnswers: ["120","125","12","25"], correctAnswer: 1),
         Question(question: "What's\\ the\\ volume\\ of\\ a\\ cube\\ with\\\\ sides\\ that\\ are\\ 10\\ units\\\\ long?", arrayOfAnswers: ["100","1000","10","10000"], correctAnswer: 1),
->>>>>>> 27462b9767d6dfe0281c76933aec48d05dd20b6c
         Question(question: "99-64=?", arrayOfAnswers: ["34","35","45","65"], correctAnswer: 1),
         Question(question: "66/3", arrayOfAnswers: ["2","22","33","23"], correctAnswer: 1),
         Question(question: "99-43=?", arrayOfAnswers: ["56","76","66","55"], correctAnswer: 0),
