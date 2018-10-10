@@ -64,9 +64,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         let pools = QuestionPool()
+<<<<<<< HEAD
         let fifthSixthTopic = Topic(name: "5th/6th grade math", description: "Hey", questionPool: pools.fifthSixthQuestionPool)
+=======
+        
+        let fifthSixthTopic = Topic(name: "5th/6th grade math", description: "hi", questionPool: pools.fifthSixthQuestionPool)
+>>>>>>> 2dde485953174a2b5a52cc395f9db5ce51b6539d
         let seventhEighthTopic = Topic(name: "7th/8th grade math", description: "Hola", questionPool: pools.seventhEighthQuestionPool)
-        let ninthTenthTopic = Topic(name: "9th/10th grade math", description: "Hi", questionPool: pools.ninthTenthQuestionPool)
+        let ninthTenthTopic = Topic(name: "9th/10th grade math", description: "A ", questionPool: pools.ninthTenthQuestionPool)
         let eleventhTwelfthTopic = Topic(name: "11th/12th grade math", description: "Hello", questionPool: pools.eleventhTwelfthQuestionPool)
         
 
@@ -74,7 +79,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         self.pickCharity.dataSource = self
         pickCharity.tag = 1
         pickGrade.tag = 2
-        pickCharityData = ["KID Museum","Capital Area Food Bank", "St. Jude's"]
+        pickCharityData = ["KID Museum","Capital Area Food Bank", "St. Jude's", "Outdoor Alliance", "Feeding America", "Challenger Center", "Endangered Species Coalition", "Animal Rescue Corps", "World Wildlife Fund"]
         self.pickGrade.delegate = self
         self.pickGrade.dataSource = self
 
