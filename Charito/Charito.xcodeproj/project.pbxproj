@@ -132,6 +132,7 @@
 				280453272144523B009E4AB7 /* CongratsViewController.swift */,
 				2874DE6F210BFC7200CD8D25 /* AppDelegate.swift */,
 				2874DE71210BFC7200CD8D25 /* ViewController.swift */,
+				8377E28821569317007C659E /* Charity.swift */,
 				602F0F5821569582009EB7F9 /* CharityPool.swift */,
 				2874DE76210BFC7200CD8D25 /* Assets.xcassets */,
 				2874DE73210BFC7200CD8D25 /* Main.storyboard */,
@@ -143,7 +144,6 @@
 				2804532521444E6B009E4AB7 /* Question.swift */,
 				28167AAF212E3B3C00EE65FE /* Topic.swift */,
 				28028288212F7EE600D588D0 /* Game.swift */,
-				8377E28821569317007C659E /* Charity.swift */,
 			);
 			path = Charito;
 			sourceTree = "<group>";
