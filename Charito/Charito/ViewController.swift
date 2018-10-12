@@ -15,7 +15,7 @@ var game: Game = Game(topics: [])
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var gradeSelected = ""
-    var charitySelected = ""
+    var charitySelected = 0
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var pickCharity: UIPickerView!
     @IBOutlet weak var pickGrade: UIPickerView!
@@ -24,6 +24,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             performSegue(withIdentifier: "segue1", sender: (Any).self)
         }
         
+    }
+    var sponsor: Sponsor = Sponsor(email: "", name: "", amountDonated: "")
+    @IBAction func AddSponsor(_ sender: Any) {
+            performSegue(withIdentifier: "sponsorSegue", sender: (Any).self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue1" {
@@ -38,20 +42,13 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 topicController.grade = "fifthSixth"
             }
             
-            if charitySelected == "St. Jude's"{
-                topicController.charity = CharityPool().stJudes
-                
-            } else if charitySelected == "Capital Area Food Bank"{
-                topicController.charity = CharityPool().Cap
-            } else {
-                topicController.charity = CharityPool().KID
-            }
-            //REPLACE LAST WITH ACTUAL 11TH 12TH CLASS AND ADD ELSE ALERT OF NOTHING CHOSEN
+            topicController.charity = CharityPool().pool[charitySelected]
         }
     }
     var pickCharityData: [String] = [String]()
     var pickGradeData: [String] = [String]()
 
+    
     let darkGreen = UIColor(red:0.16, green:0.50, blue:0.38, alpha:1.0)
 
     
@@ -69,7 +66,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         self.pickCharity.dataSource = self
         pickCharity.tag = 1
         pickGrade.tag = 2
-        pickCharityData = ["KID Museum","Capital Area Food Bank", "St. Jude's", "Outdoor Alliance", "Feeding America", "Challenger Center", "Endangered Species Coalition", "Animal Rescue Corps", "World Wildlife Fund"]
+        
+        // Fill PickCharityData
+        let charityPool = CharityPool()
+        let charityNames = charityPool.getNames()
+        pickCharityData = charityNames
         self.pickGrade.delegate = self
         self.pickGrade.dataSource = self
 
@@ -101,7 +102,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent  component: Int) {
         switch(pickerView.tag){
-        case 1: return charitySelected = pickCharityData[row] as String
+        case 1: return charitySelected = row
         case 2: return gradeSelected = pickGradeData[row] as String
             print(gradeSelected)
         default: return ()
