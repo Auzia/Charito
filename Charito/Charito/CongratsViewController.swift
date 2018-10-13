@@ -46,15 +46,17 @@ class CongratsViewController: UIViewController, MFMailComposeViewControllerDeleg
         controller.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func backToHome(_ sender: Any) {
-    self.performSegue(withIdentifier: "HomeSegue", sender: self)
+  
+    @IBAction func backButtonPressed(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "HomeSegue", sender: self)
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        scoreLabel.text = "\(score) / 10"
+        scoreLabel.text = "\(score) / 3"
     
     }
     

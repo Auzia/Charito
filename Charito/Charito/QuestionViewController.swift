@@ -32,7 +32,7 @@ class QuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     var answeredQs: [Int] = []
     var correctAnswers: Int = 0
-    var total: Int = 10
+    var total: Int = 3
 
     var question: Question = Question(question: "", arrayOfAnswers: [],  correctAnswer: 0)
     var pool = QuestionPool().seventhEighthQuestionPool //placeholder
