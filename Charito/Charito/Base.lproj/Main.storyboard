@@ -419,20 +419,20 @@
         <scene sceneID="4kk-LC-8ct">
             <objects>
                 <viewController id="gdT-0V-pVa" customClass="QuestionViewController" customModule="Charito" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ezc-cn-6aS">
+                    <view key="view" alpha="0.75" contentMode="scaleToFill" id="Ezc-cn-6aS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YVD-ui-JP8">
                                 <rect key="frame" x="10" y="30" width="394" height="652"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0K-9t-yuG">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0K-9t-yuG">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
                                         <color key="backgroundColor" red="0.1203084426" green="0.29843672090000001" blue="0.5632267406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="kRT-N9-gbu"/>
+                                            <constraint firstAttribute="height" constant="150" id="kRT-N9-gbu"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="49"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -442,7 +442,7 @@
                                             <constraint firstAttribute="height" constant="25" id="41R-7u-hZm"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.1529411765" green="0.36470588240000001" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PH2-4I-Ox0" customClass="MTMathUILabel">
@@ -450,8 +450,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="20x-D4-NWE"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="b50-4n-JOo">
@@ -460,15 +459,15 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkN-be-D0k">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="20" id="bgn-AL-WrA"/>
+                                                    <constraint firstAttribute="width" constant="30" id="bgn-AL-WrA"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" red="0.1529411765" green="0.36470588240000001" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Choice " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHg-Xc-hWX" customClass="MTMathUILabel">
                                                 <rect key="frame" x="25" y="0.0" width="369" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -483,15 +482,15 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZW-ik-Tt7">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="20" id="gso-mA-wLm"/>
+                                                    <constraint firstAttribute="width" constant="30" id="gso-mA-wLm"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" red="0.1529411765" green="0.36470588240000001" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AnswerChoice" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCh-5h-TVB" customClass="MTMathUILabel">
                                                 <rect key="frame" x="25" y="0.0" width="369" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -506,15 +505,15 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxj-p1-DB6">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="20" id="x9o-bG-sU3"/>
+                                                    <constraint firstAttribute="width" constant="30" id="x9o-bG-sU3"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" red="0.1529411765" green="0.36470588240000001" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Choice" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-Pk-1kH" customClass="MTMathUILabel">
                                                 <rect key="frame" x="25" y="0.0" width="369" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -529,15 +528,15 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4g-KN-55Y">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="20" id="vdG-mh-TkH"/>
+                                                    <constraint firstAttribute="width" constant="30" id="vdG-mh-TkH"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" red="0.1529411765" green="0.36470588240000001" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Choice " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLc-lJ-saI" customClass="MTMathUILabel">
                                                 <rect key="frame" x="25" y="0.0" width="369" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -559,16 +558,30 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Submit Answer">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" red="0.1529411765" green="0.36470588240000001" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="submitAnswer:" destination="gdT-0V-pVa" eventType="touchUpInside" id="ZP6-yX-8tq"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JoL-HA-pnc" secondAttribute="trailing" constant="30" id="7RA-qA-9rB"/>
+                                    <constraint firstAttribute="trailing" secondItem="b50-4n-JOo" secondAttribute="trailing" constant="30" id="A0g-c6-szO"/>
+                                    <constraint firstItem="D0K-9t-yuG" firstAttribute="leading" secondItem="YVD-ui-JP8" secondAttribute="leading" id="HO7-lo-IeD"/>
+                                    <constraint firstItem="Own-YV-N6C" firstAttribute="leading" secondItem="YVD-ui-JP8" secondAttribute="leading" constant="30" id="LaJ-Ib-bRI"/>
+                                    <constraint firstItem="rjv-W8-vEe" firstAttribute="leading" secondItem="YVD-ui-JP8" secondAttribute="leading" constant="30" id="Pug-n0-naM"/>
+                                    <constraint firstItem="b50-4n-JOo" firstAttribute="leading" secondItem="YVD-ui-JP8" secondAttribute="leading" constant="30" id="QeH-ig-O88"/>
+                                    <constraint firstItem="PH2-4I-Ox0" firstAttribute="leading" secondItem="YVD-ui-JP8" secondAttribute="leading" constant="20" id="U9V-zI-NIS"/>
+                                    <constraint firstAttribute="trailing" secondItem="PH2-4I-Ox0" secondAttribute="trailing" constant="20" id="Wch-0x-FXD"/>
+                                    <constraint firstAttribute="trailing" secondItem="rjv-W8-vEe" secondAttribute="trailing" constant="30" id="Xae-A3-zi5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Own-YV-N6C" secondAttribute="trailing" constant="30" id="YOd-Xv-VKK"/>
+                                    <constraint firstItem="JoL-HA-pnc" firstAttribute="leading" secondItem="YVD-ui-JP8" secondAttribute="leading" constant="30" id="aoA-p7-r9X"/>
+                                    <constraint firstAttribute="trailing" secondItem="D0K-9t-yuG" secondAttribute="trailing" id="ftj-h9-h7L"/>
+                                </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.1529411765" green="0.36470588240000001" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20749965505475793" green="0.66730959898354281" blue="0.78998752737135469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YVD-ui-JP8" firstAttribute="leading" secondItem="NvD-O0-cFp" secondAttribute="leading" constant="10" id="QKl-z8-ass"/>
                             <constraint firstItem="NvD-O0-cFp" firstAttribute="trailing" secondItem="YVD-ui-JP8" secondAttribute="trailing" constant="10" id="hh5-as-B5f"/>
