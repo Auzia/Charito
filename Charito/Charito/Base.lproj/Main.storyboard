@@ -10,6 +10,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="8yb-Lk-G41">
+            <objects>
+                <viewController id="b47-lH-BE5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K1D-EF-34Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" highlightedImage="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Cqv-rN-jDO">
+                                <rect key="frame" x="-144" y="-66" width="558" height="1068"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8u8-Rr-EYL">
+                                <rect key="frame" x="-90" y="105" width="755" height="611"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kPk-i5-8Xm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gh2-Sf-taT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="-773.64130434782612"/>
+        </scene>
         <!--HomeViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -21,13 +46,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Gg7-3R-hAU">
                                 <rect key="frame" x="10" y="0.0" width="389" height="736"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVX-CI-DwL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bj-nU-Rf2">
                                         <rect key="frame" x="0.0" y="0.0" width="389" height="69"/>
-                                        <color key="backgroundColor" red="0.12030844261634137" green="0.29843672089694079" blue="0.5632267405693242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.1203084426" green="0.29843672090000001" blue="0.5632267406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="69" id="lKl-0f-Jqs"/>
+                                            <constraint firstAttribute="height" constant="69" id="ir2-qU-Yet"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="41"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -123,6 +148,10 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8Bj-nU-Rf2" secondAttribute="trailing" id="NPx-cq-PvN"/>
+                                    <constraint firstItem="8Bj-nU-Rf2" firstAttribute="leading" secondItem="Gg7-3R-hAU" secondAttribute="leading" id="uPE-CT-r9X"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.15294117647058825" green="0.36470588235294116" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -155,7 +184,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6c-MV-ZbY">
                                 <rect key="frame" x="5" y="0.0" width="409" height="69"/>
                                 <color key="backgroundColor" red="0.1203084426" green="0.29843672090000001" blue="0.5632267406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="41"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -270,7 +299,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="AWX-7G-QGQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="41"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -318,7 +347,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="8hm-dZ-diS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -550,13 +579,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7u-0v-Q16">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
                                 <color key="backgroundColor" red="0.1203084426" green="0.29843672090000001" blue="0.5632267406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="41"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkX-zF-Ju2">
                                 <rect key="frame" x="87" y="96" width="258" height="60"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="37"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                 <color key="textColor" red="0.97723575039999999" green="0.99328832199999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -571,8 +600,8 @@
                                     <action selector="backToHome:" destination="EXh-Oh-J1G" eventType="touchUpInside" id="liK-sI-fEq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" preservesSuperviewLayoutMargins="YES" text="You got" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bc-UN-bR7">
-                                <rect key="frame" x="110" y="265" width="124" height="46"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="You got" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bc-UN-bR7">
+                                <rect key="frame" x="103.66666666666669" y="265" width="108" height="46"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -593,19 +622,28 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="congrats" highlightedImage="congrats" translatesAutoresizingMaskIntoConstraints="NO" id="5vL-F9-Ei2">
+                                <rect key="frame" x="20" y="326" width="374" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="1ld-Du-7MP"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1529411765" green="0.36470588240000001" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qkX-zF-Ju2" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" constant="87" id="9uL-ER-zAr"/>
+                            <constraint firstItem="5vL-F9-Ei2" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" constant="20" id="0AV-SU-xGu"/>
+                            <constraint firstItem="5vL-F9-Ei2" firstAttribute="top" secondItem="yIb-na-uZb" secondAttribute="top" constant="326" id="8sV-td-GbB"/>
                             <constraint firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" constant="114" id="DT0-Fc-kOq"/>
+                            <constraint firstItem="gdP-Uv-ZPo" firstAttribute="trailing" secondItem="5vL-F9-Ei2" secondAttribute="trailing" constant="20" id="G63-Xj-6KW"/>
+                            <constraint firstItem="5WN-BY-XKA" firstAttribute="top" secondItem="5vL-F9-Ei2" secondAttribute="bottom" constant="15" id="Gv7-tk-xo5"/>
                             <constraint firstItem="qkX-zF-Ju2" firstAttribute="top" secondItem="h7u-0v-Q16" secondAttribute="bottom" constant="23" id="HYU-2I-5cX"/>
                             <constraint firstItem="h7u-0v-Q16" firstAttribute="trailing" secondItem="gdP-Uv-ZPo" secondAttribute="trailing" id="ITS-zE-TLq"/>
-                            <constraint firstItem="gdP-Uv-ZPo" firstAttribute="trailing" secondItem="qkX-zF-Ju2" secondAttribute="trailing" constant="87" id="Iaf-6L-jUT"/>
                             <constraint firstItem="wig-Ym-Nur" firstAttribute="trailing" secondItem="gdP-Uv-ZPo" secondAttribute="trailing" id="JKc-Kb-7kk"/>
                             <constraint firstItem="b1m-hK-NAO" firstAttribute="leading" secondItem="0Bc-UN-bR7" secondAttribute="trailing" constant="8" symbolic="YES" id="JWk-gd-e5l"/>
                             <constraint firstItem="0Bc-UN-bR7" firstAttribute="centerY" secondItem="b1m-hK-NAO" secondAttribute="centerY" id="KO1-TE-RXf"/>
                             <constraint firstItem="0Bc-UN-bR7" firstAttribute="leading" secondItem="qkX-zF-Ju2" secondAttribute="leading" id="PX5-cM-Z2o"/>
                             <constraint firstItem="gdP-Uv-ZPo" firstAttribute="bottom" secondItem="qkX-zF-Ju2" secondAttribute="bottom" constant="580" id="VRc-47-OZ1"/>
+                            <constraint firstItem="5vL-F9-Ei2" firstAttribute="top" secondItem="0Bc-UN-bR7" secondAttribute="bottom" constant="15" id="bQA-xJ-KV3"/>
                             <constraint firstItem="5WN-BY-XKA" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" constant="30" id="bZv-aZ-KaU"/>
                             <constraint firstItem="wig-Ym-Nur" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" id="ena-wf-ATE"/>
                             <constraint firstItem="0Bc-UN-bR7" firstAttribute="top" secondItem="yIb-na-uZb" secondAttribute="top" constant="265" id="fZR-JR-mNv"/>
@@ -630,8 +668,13 @@
             <point key="canvasLocation" x="2018.840579710145" y="785.86956521739137"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="300" height="532"/>
+        <image name="congrats" width="2592" height="1728"/>
+        <image name="logo" width="480" height="360"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HeJ-eb-Ngn"/>
+        <segue reference="leq-mi-6Mf"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
