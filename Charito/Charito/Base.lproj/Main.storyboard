@@ -10,21 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="1zS-oO-Ef5">
-            <objects>
-                <viewController id="PfR-vE-08M" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="w3f-af-Hwx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="xna-fW-yU0"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DlH-Tn-mjn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="791" y="-56"/>
-        </scene>
         <!--HomeViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -182,13 +167,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your sponsor's name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nu-3J-m6z">
-<<<<<<< HEAD
-                                <rect key="frame" x="20" y="357.66666666666669" width="209" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-=======
                                 <rect key="frame" x="20" y="355.66666666666669" width="340" height="25"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="25"/>
->>>>>>> cc84c9ddb47f93c36f1b0f5a393423f3f135ac05
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -205,11 +185,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mKr-JQ-ksX">
-<<<<<<< HEAD
-                                <rect key="frame" x="20" y="386.66666666666669" width="374" height="30"/>
-=======
                                 <rect key="frame" x="20" y="388.66666666666669" width="374" height="30"/>
->>>>>>> cc84c9ddb47f93c36f1b0f5a393423f3f135ac05
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="8a6-Gw-GyQ"/>
                                 </constraints>
@@ -218,11 +194,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2cl-Zd-Uhr">
-<<<<<<< HEAD
-                                <rect key="frame" x="20" y="258.66666666666669" width="374" height="30"/>
-=======
                                 <rect key="frame" x="20" y="260.66666666666669" width="374" height="30"/>
->>>>>>> cc84c9ddb47f93c36f1b0f5a393423f3f135ac05
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="lWU-j8-e61"/>
                                 </constraints>
@@ -336,15 +308,9 @@
                                     <segue destination="gdT-0V-pVa" kind="show" identifier="segue2" id="pyL-B7-2Jj"/>
                                 </connections>
                             </button>
-<<<<<<< HEAD
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuP-eM-Whl">
-                                <rect key="frame" x="20" y="446.66666666666669" width="374" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-=======
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Charity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuP-eM-Whl">
                                 <rect key="frame" x="20" y="464" width="374" height="34"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
->>>>>>> cc84c9ddb47f93c36f1b0f5a393423f3f135ac05
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -358,7 +324,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xc0-oz-MIy">
-                                <rect key="frame" x="75.666666666666686" y="286" width="263" height="153"/>
+                                <rect key="frame" x="75.666666666666686" y="283.66666666666669" width="263" height="163.66666666666669"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.15294117647058825" green="0.36470588235294116" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -614,32 +580,15 @@
                                     <segue destination="BYZ-38-t0r" kind="showDetail" identifier="HomeSegue" id="nuI-7K-Ii8"/>
                                 </connections>
                             </button>
-<<<<<<< HEAD
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You got" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bc-UN-bR7">
-                                <rect key="frame" x="91" y="265" width="111" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x/3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1m-hK-NAO">
-                                <rect key="frame" x="210" y="263" width="52.333333333333314" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-=======
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" preservesSuperviewLayoutMargins="YES" text="You got" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bc-UN-bR7">
                                 <rect key="frame" x="110" y="265" width="124" height="46"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
->>>>>>> cc84c9ddb47f93c36f1b0f5a393423f3f135ac05
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WN-BY-XKA">
-<<<<<<< HEAD
-                                <rect key="frame" x="30" y="553" width="354" height="52"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-=======
                                 <rect key="frame" x="30" y="577" width="354" height="42"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
->>>>>>> cc84c9ddb47f93c36f1b0f5a393423f3f135ac05
                                 <state key="normal" title="Send Email to Sponsor">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -656,11 +605,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1529411765" green="0.36470588240000001" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-<<<<<<< HEAD
-                            <constraint firstItem="qkX-zF-Ju2" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" constant="91" id="9uL-ER-zAr"/>
-=======
                             <constraint firstItem="qkX-zF-Ju2" firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" constant="87" id="9uL-ER-zAr"/>
->>>>>>> cc84c9ddb47f93c36f1b0f5a393423f3f135ac05
                             <constraint firstAttribute="leading" secondItem="gdP-Uv-ZPo" secondAttribute="leading" constant="114" id="DT0-Fc-kOq"/>
                             <constraint firstItem="qkX-zF-Ju2" firstAttribute="top" secondItem="h7u-0v-Q16" secondAttribute="bottom" constant="23" id="HYU-2I-5cX"/>
                             <constraint firstItem="h7u-0v-Q16" firstAttribute="trailing" secondItem="gdP-Uv-ZPo" secondAttribute="trailing" id="ITS-zE-TLq"/>
@@ -694,11 +639,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
         <segue reference="nuI-7K-Ii8"/>
-=======
-        <segue reference="HeJ-eb-Ngn"/>
->>>>>>> cc84c9ddb47f93c36f1b0f5a393423f3f135ac05
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
