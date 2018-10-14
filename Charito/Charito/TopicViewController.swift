@@ -15,6 +15,7 @@ class TopicViewController: UIViewController{
     @IBOutlet weak var topicExamples: UILabel!
     @IBOutlet weak var charityName: UILabel!
     @IBOutlet weak var charityDescription: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     
     @IBAction func Start(_ sender: Any) {
@@ -25,20 +26,21 @@ class TopicViewController: UIViewController{
     var charity: Charity = Charity()
     var qPool = QuestionPool()
     var sponsor: Sponsor = Sponsor(email: "", name: "", amountDonated: "")
+   
 
     override func viewDidLoad() {
         print(sponsor.name)
         if grade == "fifthSixth"{
-            topic = Topic(name: "5th and 6th Grade", description: "You will see basic \n arithmetic on this section", questionPool: qPool.fifthSixthQuestionPool)
+            topic = Topic(name: "5th and 6th Grade", description: "You will see basic \n arithmetic on this section", questionPool: qPool.fifthSixthQuestionPool, image: "fivesix")
             
         } else if grade == "seventhEighth"{
-            topic = Topic(name: "7th and 8th Grade", description: "You will see basic \n arithmetic on this section along \n with some basic algebra\n and geometry", questionPool: qPool.seventhEighthQuestionPool)
+            topic = Topic(name: "7th and 8th Grade", description: "You will see basic \n arithmetic on this section along \n with some basic algebra\n and geometry", questionPool: qPool.seventhEighthQuestionPool, image: "seveneight")
             
         } else if grade == "ninthTenth"{
-            topic = Topic(name: "9th and 10th Grade", description: "You will see algebra\n and geometry on this\n section that is moderately complex.\n You will also see some \nbasic trigonometry.", questionPool: qPool.ninthTenthQuestionPool)
+            topic = Topic(name: "9th and 10th Grade", description: "You will see algebra\n and geometry on this\n section that is moderately complex.\n You will also see some \nbasic trigonometry.", questionPool: qPool.ninthTenthQuestionPool, image: "nineten")
             
         } else if grade == "eleventhTwelfth"{
-            topic = Topic(name: "11th and 12th Grade", description: "You will see some\n trigonometry and other standard\n questions for precalculus and\n calculus students.", questionPool: qPool.eleventhTwelfthQuestionPool)
+            topic = Topic(name: "11th and 12th Grade", description: "You will see some\n trigonometry and other standard\n questions for precalculus and\n calculus students.", questionPool: qPool.eleventhTwelfthQuestionPool, image: "eleventwelve")
             
         }
         
@@ -47,11 +49,12 @@ class TopicViewController: UIViewController{
         topicExamples.text = topic.description
         charityName.text = "You decided to donate to: " + charity.name
         charityDescription.text = charity.description
+        imageView.image = UIImage(named: topic.image)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue2" {
-            var questionController = segue.destination as! QuestionViewController
+            let questionController = segue.destination as! QuestionViewController
             questionController.topic1 = topic
             questionController.pool = topic.questionPool
             questionController.sponsor = sponsor
