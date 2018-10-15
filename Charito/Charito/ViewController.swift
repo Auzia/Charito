@@ -31,7 +31,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue1" {
-            var topicController = segue.destination as! TopicViewController
+            let topicController = segue.destination as! TopicViewController
             if gradeSelected == "11th through 12th"{
                 topicController.grade = "eleventhTwelfth"
             } else if gradeSelected == "7th through 8th" {
